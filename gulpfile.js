@@ -1,41 +1,44 @@
-/* Gulp Tasks */
+// =========================================================
+// Gulp Tasks
+// Install Gulp plugins:
+// npm install --save-dev gulp-uglify gulp-sass gulp-concat
+// =========================================================
 var gulp = require('gulp'),
 		uglify = require('gulp-uglify'),
-		scss = require('gulp-scss'),
-		concat = require('gulp-concat');
+		concat = require('gulp-concat'),
+		scss = require('gulp-sass');
 
+// ========================================
 // Default Gulp task
+// ========================================
 gulp.task('default', function(){
 	console.log('Gulp, reporting in, ready for service!');
 });
 
-
 // ========================================
 // CSS Build Tasks
 // ========================================
-
-// Compile SCSS files
+// Build CSS Assets for Development
 gulp.task("build-dev-css", function () {
   gulp.src("./assets/scss/**/*.scss")
-			.pipe(scss({"bundleExec": true}))
+			.pipe(scss().on('error', scss.logError))
 			.pipe(concat('custom.css'))
 			.pipe(gulp.dest("./assets/css/"));
 });
 
+// Build CSS Assets for Production
 gulp.task("build-prod-css", function () {
   gulp.src("./assets/scss/**/*.scss")
-			.pipe(scss({"bundleExec": true}))
+			.pipe(scss().on('error', scss.logError))
 			.pipe(concat('custom.css'))
 			.pipe(uglify())
 			.pipe(gulp.dest("./assets/css/"));
 });
 
-
 // ========================================
 // JS Build Tasks
 // ========================================
-
-// Build Function for Development
+// Build JS Assets for Development
 gulp.task('build-dev-js', function() {
 	console.log('Building Assets for Development...');
 	return gulp
@@ -44,9 +47,8 @@ gulp.task('build-dev-js', function() {
 		.pipe(gulp.dest('./assets/js/'));
 });
 
-// Build Function for Production
+// Build JS Assets for Production
 gulp.task('build-prod-js', function() {
-	console.log('Building Assets for Production...');
 	return gulp
 		.src('./assets/js/modules/*.js')
 		.pipe(concat('custom.js'))
@@ -55,9 +57,8 @@ gulp.task('build-prod-js', function() {
 });
 
 // ========================================
-// Dev Tasks
+// Unit Tests
 // ========================================
-
 // Run Unit Tests
 gulp.task('unit-test', function() {
 	console.log('Running Unit Tests...');
@@ -65,18 +66,13 @@ gulp.task('unit-test', function() {
 	console.log('Tests complete.');
 });
 
-// Watch SCSS files to compile on save.
+// =====================================================
+// Watch SCSS & JS files to compile/concatenate on save.
+// =====================================================
 gulp.task('watch', function() {
 	console.log("I'm watching you...");
-	console.log(process.argv[2]);
-	var environment = process.argv[2];
-
-	if(environment === '-dev') {
-		gulp.watch('./assets/css/scss/**/*.scss', ['build-dev-css']);
-		gulp.watch('./assets/js/**/*.js', ['unit-test', 'build-dev-js']);
-	}else
-	if( environment === '-prod') {
-		gulp.watch('./assets/css/scss/**/*.scss', ['build-prod-css']);
-		gulp.watch('./assets/js/**/*.js', ['unit-test', 'build-prod-js']);
-	}
+	// console.log(process.argv[2]);
+	// var environment = process.argv[2];
+	gulp.watch('./assets/scss/**/*.scss', ['build-dev-css']);
+	gulp.watch('./assets/js/**/*.js', ['unit-test', 'build-dev-js']);
 });
