@@ -41,7 +41,6 @@ gulp.task("build-prod-css", function () {
 // ========================================
 // Build JS Assets for Development
 gulp.task('build-dev-js', function() {
-	console.log('Building Assets for Development...');
 	return gulp
 		.src('./assets/js/modules/*.js')
 		.pipe(concat('custom.js'))
