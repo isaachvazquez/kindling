@@ -22,16 +22,16 @@ gulp.task('default', function(){
 // Build CSS Assets for Development
 gulp.task("build-dev-css", function () {
   gulp.src("./assets/scss/**/*.scss")
-			.pipe(scss().on('error', scss.logError))
 			.pipe(concat('custom.css'))
+			.pipe(scss().on('error', scss.logError))
 			.pipe(gulp.dest("./assets/css/"));
 });
 
 // Build CSS Assets for Production
 gulp.task("build-prod-css", function () {
 	gulp.src("./assets/scss/**/*.scss")
-			.pipe(scss().on('error', scss.logError))
 			.pipe(concat('custom.css'))
+			.pipe(scss().on('error', scss.logError))
 			.pipe(cssnano())
 			.pipe(gulp.dest("./assets/css/"));
 });
@@ -41,7 +41,6 @@ gulp.task("build-prod-css", function () {
 // ========================================
 // Build JS Assets for Development
 gulp.task('build-dev-js', function() {
-	console.log('Building Assets for Development...');
 	return gulp
 		.src('./assets/js/modules/*.js')
 		.pipe(concat('custom.js'))

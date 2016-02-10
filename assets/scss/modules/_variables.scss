@@ -1,4 +1,4 @@
-// Module 2
+// SCSS Variables
 $sans-fallback              : 'Trade Gothic, Helvetica, Arial, sans-serif';
 $serif-fallback             : 'Adelle, Georgia, Times New Roman, Times, serif';
 
@@ -28,18 +28,3 @@ $nav-height-tight: 43px;
 
 // Colors
 $main-color: #F3825B;
-
-
-
-// Mixins
-@mixin border-radius($radius) {
-  -webkit-border-radius: $radius;
-     -moz-border-radius: $radius;
-      -ms-border-radius: $radius;
-          border-radius: $radius;
-}
-
-.rounded-corners {
-  color: $main-color;
-  @include border-radius(5px);
-}
