@@ -1,0 +1,30 @@
+// SCSS Variables
+$sans-fallback              : 'Trade Gothic, Helvetica, Arial, sans-serif';
+$serif-fallback             : 'Adelle, Georgia, Times New Roman, Times, serif';
+
+$sans-light                 : 'TradeGothicNextW02-Ligh 694371', #{$sans-fallback};
+$sans                       : 'Trade Gothic Next W02', #{$sans-fallback};
+$sans-italic                : 'TradeGothicNextW02-Ligh 694374', #{$sans-fallback};
+$sans-bold                  : 'TradeGothicNextW02-Bold 694383', #{$sans-fallback};
+$sans-condensed-bold        : 'TradeGothicNextW02-Bold 694368', #{$sans-fallback};
+
+$serif                      : 'Adelle W02 Regular', #{$serif-fallback};
+$serif-light                : 'Adelle W02 Light', #{$serif-fallback};
+$serif-italic               : 'Adelle W02 Light Italic', #{$serif-fallback};
+
+$serif-bold                 : 'Adelle W02 Bold', #{$serif-fallback};
+$serif-bold-italic          : 'Adelle W02 Bold Italic', #{$serif-fallback};
+
+// Text Sizes to establish vertical rhythm
+$smallest-text:               12px;
+$smallest-text-line-height:   150%;
+$largest-text:                48px;
+$largest-text-line-height:    90%;
+
+// Module Variables
+$nav-height: 63px;
+$nav-height-tight: 43px;
+
+
+// Colors
+$main-color: #F3825B;
