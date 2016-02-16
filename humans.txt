@@ -4,18 +4,41 @@
 |||||||||||||||
 ||||||||||
 |||||
+|||||
+||||||||||
+|||||||||||||||
+|||||||||||||||
+||||||||||
+|||||
+
+Site
+----
+Created: 2016/02/16
+Language: English
+Doctype: HTML5
+
 
 Team
 -----
+Developer: Isaac Vazquez
+Twitter: @isaachvazquez
+From: Minneapolis, MN
 
 
 Technology
 ----------
+Editor: Atom - http://atom.io
+Design Tool: Sketch - http://sketchapp.io
 
 
 Fonts
 -----
+Serif: ...
+Sans-serif: ...
 
 
 Special Thanks
 --------------
+Project Role: Name
+Twitter: @twitterhandle
+From: City, State
