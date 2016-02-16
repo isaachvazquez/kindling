@@ -9,6 +9,13 @@ var gulp = require('gulp'),
 		scss = require('gulp-sass'),
 		cssnano = require('gulp-cssnano');
 
+var scssPath = './assets/scss/**/*.scss',
+		jsPath = './assets/js/modules/*.js',
+		scssWatchPath = './assets/scss/**/*.scss',
+		jsWatchPath = './assets/js/**/*.js',
+		compiledCSSPath = './assets/css/',
+		compiledJSPath = './assets/js/';
+
 // ========================================
 // Default Gulp task
 // ========================================
@@ -21,19 +28,19 @@ gulp.task('default', function(){
 // ========================================
 // Build CSS Assets for Development
 gulp.task("build-dev-css", function () {
-  gulp.src("./assets/scss/**/*.scss")
+  gulp.src(scssPath)
 			.pipe(concat('custom.css'))
 			.pipe(scss().on('error', scss.logError))
-			.pipe(gulp.dest("./assets/css/"));
+			.pipe(gulp.dest(compiledCSSPath));
 });
 
 // Build CSS Assets for Production
 gulp.task("build-prod-css", function () {
-	gulp.src("./assets/scss/**/*.scss")
+	gulp.src(scssPath)
 			.pipe(concat('custom.css'))
 			.pipe(scss().on('error', scss.logError))
 			.pipe(cssnano())
-			.pipe(gulp.dest("./assets/css/"));
+			.pipe(gulp.dest(compiledCSSPath));
 });
 
 // ========================================
@@ -42,18 +49,18 @@ gulp.task("build-prod-css", function () {
 // Build JS Assets for Development
 gulp.task('build-dev-js', function() {
 	return gulp
-		.src('./assets/js/modules/*.js')
+		.src(jsPath)
 		.pipe(concat('custom.js'))
-		.pipe(gulp.dest('./assets/js/'));
+		.pipe(gulp.dest(compiledJSPath));
 });
 
 // Build JS Assets for Production
 gulp.task('build-prod-js', function() {
 	return gulp
-		.src('./assets/js/modules/*.js')
+		.src(jsPath)
 		.pipe(concat('custom.js'))
 		.pipe(uglify())
-		.pipe(gulp.dest('./assets/js/'));
+		.pipe(gulp.dest(compiledJSPath));
 });
 
 // ========================================
@@ -78,6 +85,6 @@ gulp.task('watch', function() {
 	console.log("I'm watching you...");
 	// console.log(process.argv[2]);
 	// var environment = process.argv[2];
-	gulp.watch('./assets/scss/**/*.scss', ['build-dev-css']);
-	gulp.watch('./assets/js/**/*.js', ['unit-test', 'build-dev-js']);
+	gulp.watch(scssWatchPath, ['build-dev-css']);
+	gulp.watch(jsWatchPath, ['unit-test', 'build-dev-js']);
 });
