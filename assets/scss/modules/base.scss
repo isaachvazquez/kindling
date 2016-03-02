@@ -13,6 +13,9 @@ Notes:
   box-sizing: border-box;
 }
 
+::-moz-selection{ background: #00BAA7; color: #ffffff; text-shadow: none; }
+::selection { background: #00BAA7; color: #ffffff; text-shadow: none; }
+
 html,
 body {
   width: 100%;
