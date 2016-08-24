@@ -16,9 +16,22 @@ $primary-color: #badbad;
 $secondary-color: #baaaad;
 
 
+// Grid Settings
+// ====
+$grid-gutter-base: 10;
+$grid-gutter: #{$grid-gutter-base}px;
+$grid-gutter-half: #{$grid-gutter-base / 2}px;
+$grid-gutter-double: #{$grid-gutter-base * 2}px;
+
+
+// Breakpoint Settings
+// ====
+$breakpoint-xs: 400px;
+$breakpoint-s: 640px;
+$breakpoint-m: 960px;
+$breakpoint-l: 1200px;
+$breakpoint-xl: 1400px;
+
 
 // Module Settings
 // ====
-// Examples:
-// $gutter: 30px;
-//
