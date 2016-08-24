@@ -1,15 +1,13 @@
 /*-- Utility Classes --*/
-.rounded-corners {
-  @include border-radius(5px);
-}
-
-
 .clearfix:after {
   content: '';
   display: table;
   clear: both;
 }
 
-.centered {
+.centered-absolute {
+  position: absolute;
+  top: 50%;
+  left: 50%;
   @include transform-translate(-50%, -50%);
 }

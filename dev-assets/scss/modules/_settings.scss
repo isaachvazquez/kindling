@@ -10,6 +10,12 @@ $sans: 'Sans Font Name', #{$sans-fallback};
 $serif: 'Serif Font Name', #{$serif-fallback};
 
 
+// Text Size Settings
+// ====
+$base-size: 16;
+$base-text-size: #{$base-size}px;
+
+
 // Color Settings
 // ====
 $primary-color: #badbad;
