@@ -8,7 +8,7 @@ if(a === b) {
 }
 
 for(var i=0; i<b; i++) {
-  console.log('Arrrgggggghhhhh I am a pirate');
+  console.log('Arrrgggggghhhhh I am a pirate, and I have a hook.');
 }
 
 var x = 212;
