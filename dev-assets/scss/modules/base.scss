@@ -138,8 +138,11 @@ hr {
 }
 
 
-/* #SECTION-TITLE
+/* CMS WYSIWYG Styles
 ---------------------------------------------*/
+// Prevents people from going line break crazy
+br + br { display: none; }
+
 
 /* #SECTION-TITLE
 ---------------------------------------------*/
