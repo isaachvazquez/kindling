@@ -21,7 +21,7 @@ var scssPath = './dev-assets/scss/**/*.scss',
 // ========================================
 // Default Gulp task
 // ========================================
-gulp.task('default', function(){
+gulp.task('default', function() {
 	console.log('Gulp, reporting in, ready for service!');
 });
 
