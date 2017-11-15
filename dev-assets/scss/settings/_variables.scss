@@ -1,4 +1,6 @@
-// Settings
+/* [[1]] _variables.scss */
+
+// Variables
 
 
 // Font Settings
@@ -12,8 +14,13 @@ $serif: 'Serif Font Name', #{$serif-fallback};
 
 // Text Size Settings
 // ====
-$base-size: 16;
-$base-text-size: #{$base-size}px;
+$fontsize-1: 8;
+$fontsize-2: 12;
+$fontsize-3: 16;
+$fontsize-4: 24;
+$fontsize-5: 32;
+$fontsize-6: 48;
+$fontsize-7: 56;
 
 
 // Color Settings

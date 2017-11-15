@@ -9,11 +9,18 @@ var gulp = require('gulp'),
 		tape = require('gulp-tape'),
 		tapColorize = require('tap-colorize');
 
-var scssPath = './dev-assets/scss/**/*.scss',
-		jsPath = './dev-assets/js/modules/*.js',
-		scssWatchPath = './dev-assets/scss/**/*.scss',
-		jsWatchPath = './dev-assets/js/**/*.js',
+var VendorSCSSPath = './dev-assets/scss/vendor/*.scss',
+		SettingsSCSSPath = './dev-assets/scss/settings/settings.scss',
+		LayoutSCSSPath = './dev-assets/scss/layout/*.scss',
+		DisplayPatternsSCSSPath = './dev-assets/scss/display-patterns/*.scss',		
+		StyleguideSCSSPath = './dev-assets/scss/styleguide.scss',
+
+		scssBuildPath = [VendorSCSSPath, SettingsSCSSPath, LayoutSCSSPath, DisplayPatternsSCSSPath],
+
+		scssWatchPath = ['./dev-assets/scss/**/*.scss'],
 		compiledCSSPath = './assets/css/',
+		jsPath = './dev-assets/js/modules/*.js',
+		jsWatchPath = './dev-assets/js/**/*.js',
 		compiledJSPath = './assets/js/';
 
 // ========================================
@@ -28,15 +35,25 @@ gulp.task('default', function() {
 // ========================================
 // Build CSS Assets for Development
 gulp.task("build-dev-css", function () {
-  gulp.src(scssPath)
+  gulp.src(scssBuildPath)
 			.pipe(concat('custom.css'))
 			.pipe(scss().on('error', scss.logError))
 			.pipe(gulp.dest(compiledCSSPath));
 });
 
+// Build CSS Assets for Styleguide
+gulp.task("build-styleguide-css", function () {
+  gulp.src(StyleguideSCSSPath)
+			.pipe(concat('styleguide.css'))
+			.pipe(scss().on('error', scss.logError))
+			.pipe(gulp.dest(compiledCSSPath));
+});
+
+
+// [Consider building styleguide css into a separate file that is only included on the styleguide page]
 // Build CSS Assets for Production
 gulp.task("build-prod-css", function () {
-	gulp.src(scssPath)
+	gulp.src(scssBuildPath)
 			.pipe(concat('custom.css'))
 			.pipe(scss().on('error', scss.logError))
 			.pipe(cssnano())
@@ -84,6 +101,7 @@ gulp.task('watch', function() {
 	console.log("I'm watching you...");
 	// console.log(process.argv[2]);
 	// var environment = process.argv[2];
-	gulp.watch(scssWatchPath, ['build-dev-css']);
+	// gulp.watch(scssWatchPath, ['build-dev-css']);
+	gulp.watch(scssWatchPath, ['build-dev-css', 'build-styleguide-css']);
 	gulp.watch(jsWatchPath, ['build-dev-js']);
 });
