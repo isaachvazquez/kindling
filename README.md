@@ -9,8 +9,9 @@ New Project setup.
 ## Usage
 
 ### Development Commands
-`yarn run gulp watch` - Compiles/concatenates all scss/js files on save.
-`yarn run gulp test` - Runs Unit Tests
+* `yarn run gulp watch` - Compiles/concatenates all scss/js files on save.
+* `yarn run gulp test` - Runs Unit Tests.
+* `yarn run kindling` - Serves the site at `localhost:2222`.
 
 ### Production Commands
-`yarn run gulp build` - Builds all assets for production environment.
+* `yarn run gulp build` - Builds all assets for production environment.

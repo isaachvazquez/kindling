@@ -9,5 +9,8 @@
     "gulp-uglify": "^2.0.1",
     "tap-colorize": "^1.2.0",
     "tape": "^4.6.3"
+  },
+  "scripts": {
+    "kindling": "php -S localhost:2222"
   }
 }
