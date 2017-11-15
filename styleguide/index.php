@@ -26,7 +26,7 @@
   <!-- Facebook sharing. http://developers.facebook.com/docs/opengraph/ -->
   <meta property="og:type" content="Page Name">
   <meta property="og:title" content="">
-  <meta property="og:image" content="./assets/images/icons/favicon.png">
+  <meta property="og:image" content="./assets/images/icons/poop.png">
   <meta property="og:site_name" content="Site Name">
   <meta property="og:url" content="http://domain.com">
   <meta property="og:description" content="">
@@ -37,7 +37,7 @@
   <meta name="twitter:creator" content="@twitter_handle">
   <meta name="twitter:title" content="Site Title">
   <meta name="twitter:description" content="Description">
-  <meta name="twitter:image:src" content="/assets/images/icons/favicon.png">
+  <meta name="twitter:image:src" content="/assets/images/icons/poop.png">
 
   <!-- Custom CSS -->
   <!-- You want to have your CSS as the very first asset that the HTML requests. - Harry Roberts -->
@@ -47,8 +47,8 @@
 
   <!-- ICONS -->
   <link rel="apple-touch-icon" href="./assets/images/icons/apple-touch-icon.png">
-  <link rel="shortcut icon" href="./assets/images/icons/favicon.png" type="image/x-icon">
-  <link rel="icon" href="./assets/images/icons/favicon.png" type="image/x-icon">
+  <link rel="shortcut icon" href="./assets/images/icons/poop.png" type="image/x-icon">
+  <link rel="icon" href="./assets/images/icons/poop.png" type="image/x-icon">
 </head>
 <body class="styleguide">
   <!-- Body -->
