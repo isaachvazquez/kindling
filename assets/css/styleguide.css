@@ -162,3 +162,10 @@ Table of Contents
     background-color: #fbfdfd;
     border: 1px solid var(--border-color);
     border-radius: 2px; }
+
+[class*="col-"] {
+  background-color: #efefef;
+  margin: 0 !important; }
+
+.row * + * {
+  margin-left: 10px !important; }

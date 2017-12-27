@@ -42,8 +42,9 @@
   <!-- Custom CSS -->
   <!-- You want to have your CSS as the very first asset that the HTML requests. - Harry Roberts -->
   <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css">
-  <link rel="stylesheet" type="text/css" href="./assets/css/styleguide.css" />
-  <link rel="stylesheet" type="text/css" href="./assets/css/custom.css" />
+  <link rel="stylesheet" type="text/css" href="../assets/css/vendor.css" />
+  <link rel="stylesheet" type="text/css" href="../assets/css/styleguide.css" />
+  <link rel="stylesheet" type="text/css" href="../assets/css/custom.css" />
 
   <!-- ICONS -->
   <link rel="apple-touch-icon" href="./assets/images/icons/apple-touch-icon.png">
@@ -59,104 +60,18 @@
   
   <nav class="styleguide-nav">
     <ul>
-      <li><a href="styleguide-settings.php">Settings/Design Elements</a></li>
-      <li><a href="styleguide-layouts.php">Layouts</a></li>
-      <li><a href="styleguide-components.php">Display Patterns/Components</a></li>
+      <li><a href="#settings-design-elements">Settings/Design Elements</a></li>
+      <li><a href="#layouts">Layouts</a></li>
+      <li><a href="#display-patterns-components">Display Patterns/Components</a></li>
     </ul>
   </nav>
 
   <main class="styleguide-main">
-    <!-- Settings -->
-    <section>
-      <h2 class="styleguide-heading">Settings</h2>
+    <?php include "settings-design-elements.php" ?>
 
-      <h3 class="styleguide-subheading">Colors</h3>
-    </section>
+    <?php include "layout.php" ?>
 
-
-    <!-- Layouts -->
-    <section>
-      <h2 class="styleguide-heading">Layouts</h2>
-
-      <h3 class="styleguide-subheading">Sub Heading</h3>
-    </section>
-
-
-    <!-- Display Patterns/Components -->
-    <section>
-      <h2 class="styleguide-heading">Display Patterns/Components</h2>
-
-      <article class="styleguide-group">
-        <h3 class="styleguide-subheading">Buttons</h3>
-        
-        <h4 class="styleguide-label">Primary Button</h4>
-        <div class="styleguide-component">
-          <button class="ha-button-primary">Primary Button</button>
-        </div>
-        <p class="styleguide-help-text">Help text for this component.</p>
-        <div class="styleguide-code-preview">
-          <pre>
-            <code class="html"></code>
-          </pre>
-        </div>
-
-        <h4 class="styleguide-label">Secondary Button</h4>
-        <div class="styleguide-component">
-          <button class="ha-button-secondary">Secondary Button</button>
-        </div>
-        <div class="styleguide-code-preview">
-          <pre>
-            <code class="html"></code>
-          </pre>
-        </div>
-      </article>
-        
-      <article class="styleguide-group">
-        <h3 class="styleguide-subheading">Page Headers</h3>
-
-        <h4 class="styleguide-label">Header Type 1</h4>
-        <div class="styleguide-component">
-          <header class="ha-header-1">Type 1 header</header>
-        </div>
-        <div class="styleguide-code-preview">
-          <pre>
-            <code class="html"></code>
-          </pre>
-        </div>
-      </article>
-
-      <article class="styleguide-group">
-        <h3 class="styleguide-subheading">Icons</h3>
-      </article>
-        
-      <article class="styleguide-group">
-        <h3 class="styleguide-subheading">Content Cards</h3>
-
-        <h4 class="styleguide-label">Header Type 1</h4>
-        <div class="styleguide-component">
-          <div class="ha-content-card">
-            <img src="http://picsum.photos/50x50" alt="">
-            <p>Text of card content</p>
-            <button class="ha-button-primary">Primary Button</button>
-          </div>
-        </div>
-        <div class="styleguide-code-preview">
-          <pre>
-            <code class="html"></code>
-          </pre>
-        </div>
-      </article>
-
-      <article class="styleguide-group">
-        <h3 class="styleguide-subheading">Banners</h3>
-      </article>
-
-      <article class="styleguide-group">
-        <h3 class="styleguide-subheading">Forms</h3>
-      </article>
-
-
-    </section>
+    <?php include "display-patterns-components.php" ?>
   </main>
 
   <footer class="styleguide-footer">
@@ -167,7 +82,7 @@
   <!-- External Javscript -->
   <!-- Highlight JS Reference: https://highlightjs.org/usage/ -->
   <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-  <script src="./assets/js/custom.js"></script>
+  <script src="../assets/js/custom.js"></script>
   <script>
 
     var entityMap = {

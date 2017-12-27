@@ -224,3 +224,21 @@ Table of Contents
     border-radius: 2px;
   }
 }
+
+
+
+
+
+
+
+
+
+// Peachy Overrides
+[class*="col-"] {
+  background-color: #efefef;
+  margin: 0 !important;
+}
+
+.row * + * {
+  margin-left: 10px !important;
+}

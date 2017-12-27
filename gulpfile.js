@@ -9,13 +9,11 @@ var gulp = require('gulp'),
 		tape = require('gulp-tape'),
 		tapColorize = require('tap-colorize');
 
-var VendorSCSSPath = './dev-assets/scss/vendor/*.scss',
-		SettingsSCSSPath = './dev-assets/scss/settings/settings.scss',
-		LayoutSCSSPath = './dev-assets/scss/layout/*.scss',
-		DisplayPatternsSCSSPath = './dev-assets/scss/display-patterns/*.scss',		
-		StyleguideSCSSPath = './dev-assets/scss/styleguide.scss',
 
-		scssBuildPath = [VendorSCSSPath, SettingsSCSSPath, LayoutSCSSPath, DisplayPatternsSCSSPath],
+// Asset Paths
+var vendorSCSSPath = './dev-assets/scss/vendor/*.scss',
+		styleguideSCSSPath = './dev-assets/scss/styleguide.scss',
+		baseSCSSPath = './dev-assets/scss/app.scss',
 
 		scssWatchPath = ['./dev-assets/scss/**/*.scss'],
 		compiledCSSPath = './assets/css/',
@@ -35,7 +33,7 @@ gulp.task('default', function() {
 // ========================================
 // Build CSS Assets for Development
 gulp.task("build-dev-css", function () {
-  gulp.src(scssBuildPath)
+  gulp.src(baseSCSSPath)
 			.pipe(concat('custom.css'))
 			.pipe(scss().on('error', scss.logError))
 			.pipe(gulp.dest(compiledCSSPath));
@@ -43,8 +41,16 @@ gulp.task("build-dev-css", function () {
 
 // Build CSS Assets for Styleguide
 gulp.task("build-styleguide-css", function () {
-  gulp.src(StyleguideSCSSPath)
+  gulp.src(styleguideSCSSPath)
 			.pipe(concat('styleguide.css'))
+			.pipe(scss().on('error', scss.logError))
+			.pipe(gulp.dest(compiledCSSPath));
+});
+
+// Build Vendor CSS Assets
+gulp.task("build-vendor-css", function () {
+  gulp.src(vendorSCSSPath)
+			.pipe(concat('vendor.css'))
 			.pipe(scss().on('error', scss.logError))
 			.pipe(gulp.dest(compiledCSSPath));
 });
@@ -53,7 +59,7 @@ gulp.task("build-styleguide-css", function () {
 // [Consider building styleguide css into a separate file that is only included on the styleguide page]
 // Build CSS Assets for Production
 gulp.task("build-prod-css", function () {
-	gulp.src(scssBuildPath)
+	gulp.src(baseSCSSPath)
 			.pipe(concat('custom.css'))
 			.pipe(scss().on('error', scss.logError))
 			.pipe(cssnano())
@@ -102,6 +108,6 @@ gulp.task('watch', function() {
 	// console.log(process.argv[2]);
 	// var environment = process.argv[2];
 	// gulp.watch(scssWatchPath, ['build-dev-css']);
-	gulp.watch(scssWatchPath, ['build-dev-css', 'build-styleguide-css']);
+	gulp.watch(scssWatchPath, ['build-dev-css', 'build-styleguide-css', 'build-vendor-css']);
 	gulp.watch(jsWatchPath, ['build-dev-js']);
 });
