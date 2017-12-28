@@ -63,6 +63,7 @@
       <li><a href="#settings-design-elements">Settings/Design Elements</a></li>
       <li><a href="#layouts">Layouts</a></li>
       <li><a href="#display-patterns-components">Display Patterns/Components</a></li>
+      <li><a href="#javascript-interactions">Javascript Interactions</a></li>
     </ul>
   </nav>
 
@@ -72,6 +73,8 @@
     <?php include "layout.php" ?>
 
     <?php include "display-patterns-components.php" ?>
+
+    <?php include "javascript-interactions.php" ?>
   </main>
 
   <footer class="styleguide-footer">
@@ -82,6 +85,7 @@
   <!-- External Javscript -->
   <!-- Highlight JS Reference: https://highlightjs.org/usage/ -->
   <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <!-- <script src="../assets/js/styleguide.js"></script> -->
   <script src="../assets/js/custom.js"></script>
   <script>
 
