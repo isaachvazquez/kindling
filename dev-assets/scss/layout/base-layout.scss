@@ -1,0 +1,55 @@
+.l-SiteWrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 100px 1fr 200px;
+  grid-template-areas: 
+    "header"
+    "main"
+    "footer";
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+
+  width: 100%;
+  height: 100%;
+  background-color: $gray-lightest;
+}
+
+.l-headerArea {
+  background-color: $gray;
+  grid-area: header;
+}
+
+.l-mainArea {
+  background-color: $gray;
+  grid-area: main;
+}
+
+.l-footerArea {
+  background-color: $gray;
+  grid-area: footer;
+}
+
+.l-sidebarArea {
+  background-color: $gray;
+  grid-area: sidebar;
+}
+
+// Sidebar Layout
+.l-Sidebar {
+  display: grid;
+  grid-template-columns: 1fr 200px;
+  grid-template-rows: 100px 1fr 200px;
+  grid-template-areas: 
+    "header header"
+    "main sidebar"
+    "footer footer";
+
+  @media(max-width: $breakpoint-sm) {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "header"
+      "main"
+      "sidebar"
+      "footer";
+  }
+}

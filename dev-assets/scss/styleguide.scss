@@ -90,16 +90,16 @@
     background-color: #ffffff;
     color: var(--link-static-color);
 
-    &::before {
-      content: '>';
-      position: absolute;
-      top: 50%;
-      right: calc(((15px + var(--nav-item-icon-size)) - var(--nav-item-icon-size)) / 2);
-      transform: translateY(-50%);
-      text-align: center;
-      width: var(--nav-item-icon-size);
-      font-size: var(--nav-item-icon-size);
-    }
+    // &::before {
+    //   content: '>';
+    //   position: absolute;
+    //   top: 50%;
+    //   right: calc(((15px + var(--nav-item-icon-size)) - var(--nav-item-icon-size)) / 2);
+    //   transform: translateY(-50%);
+    //   text-align: center;
+    //   width: var(--nav-item-icon-size);
+    //   font-size: var(--nav-item-icon-size);
+    // }
 
     &:hover {
       background-color: var(--link-hover-color);
@@ -155,6 +155,7 @@
   }
 
   .styleguide-heading {
+    font-size: 36px;
     font-weight: 100;
     letter-spacing: 0.03em;
     border-bottom: 2px solid var(--border-color);
@@ -170,24 +171,60 @@
   }
 
   .styleguide-label {
+    display: block;
     margin: 0;
     margin-bottom: 5px;
     font-size: 11px;
     font-weight: 900;
     letter-spacing: 0.09em;
     text-transform: uppercase;
+    color: #706cff;
+  }
+
+  .styleguide-label--space {
+    margin-top: 40px;
+    margin-bottom: 10px;
   }
 
   .styleguide-help-text {
-    display: inline-block;
+    position: relative;
+    display: block;
     margin-top: 5px;
     padding: 7px;
+    padding-left: calc(60px + 10px);
     max-width: 500px;
     font-size: 14px;
     line-height: 1.2;
-    color: #5cc4ef;
+    color: #706cff;
     background-color: #f5f5f5;
+    border: 1px solid #706cff;
     border-radius: 2px;
+
+    &::before {
+      content: 'NOTE:';
+      position: absolute;
+      top: -1px;
+      left: -1px;
+      width: 60px;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #f5f5f5;
+      font-weight: bold;
+      // color: #8863ff;
+      color: #ff6161;
+      border: 1px solid #ff6161;
+      border-top-left-radius: 2px;
+      border-bottom-left-radius: 2px;
+    }
+
+    h4, p { margin: 5px; }
+
+    code {
+      color: #ff6161;
+      background-color: #e6e5f3;
+    }
   }
 
 

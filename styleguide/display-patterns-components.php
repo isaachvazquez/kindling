@@ -1,6 +1,6 @@
 <!-- Display Patterns/Components -->
 <section id="display-patterns-components">
-  <h2 class="styleguide-heading">Display Patterns/Components</h2>
+  <h2 class="styleguide-heading">Display Patterns / Components</h2>
 
   <article class="styleguide-group">
     <h3 class="styleguide-subheading">Buttons</h3>
@@ -120,7 +120,7 @@
 
         <div class="ContentCard">
           <div class="ContentCard-featureImage">
-            <img src="http://picsum.photos/500x500" alt="">
+            <img src="http://picsum.photos/600x600" alt="">
           </div>
 
           <div class="ContentCard-content">
@@ -143,7 +143,7 @@
 
         <div class="ContentCard ContentCard--doubleWide">
           <div class="ContentCard-featureImage">
-            <img src="http://picsum.photos/500x500" alt="">
+            <img src="http://picsum.photos/600x600" alt="">
           </div>
 
           <div class="ContentCard-content">

@@ -14,7 +14,7 @@ $serif: 'Serif Font Name', #{$serif-fallback};
 
 // Font Sizes
 // ====
-$f1: 8px;
+$f1: 10px;
 $f2: 12px;
 $f3: 16px;
 $f4: 24px;
@@ -59,13 +59,21 @@ $base-letter-spacing: normal;
 $primary-color: #badbad;
 $secondary-color: #baaaad;
 
-$gray-lightest: lighten(#cccccc, 15%);
-$gray-lighter: lighten(#cccccc, 10%);
-$gray-light: lighten(#cccccc, 5%);
 $gray: #cccccc;
-$gray-dark: darken(#cccccc, 15%);
-$gray-darker: darken(#cccccc, 25%);
-$gray-darkest: darken(#cccccc, 50%);
+$gray-lightest: lighten($gray, 15%);
+$gray-lighter: lighten($gray, 10%);
+$gray-light: lighten($gray, 5%);
+$gray-dark: darken($gray, 15%);
+$gray-darker: darken($gray, 25%);
+$gray-darkest: darken($gray, 50%);
+
+$green: #badbad;
+$green-lightest: lighten($green, 15%);
+$green-lighter: lighten($green, 10%);
+$green-light: lighten($green, 5%);
+$green-dark: darken($green, 15%);
+$green-darker: darken($green, 25%);
+$green-darkest: darken($green, 50%);
 
 
 // Grid Settings
@@ -79,9 +87,9 @@ $grid-gutter-double: #{$grid-gutter-base * 2}px;
 // Breakpoint Settings
 // ====
 $breakpoint-xs: 400px;
-$breakpoint-s: 640px;
-$breakpoint-m: 960px;
-$breakpoint-l: 1200px;
+$breakpoint-sm: 640px;
+$breakpoint-md: 960px;
+$breakpoint-lg: 1200px;
 $breakpoint-xl: 1400px;
 
 

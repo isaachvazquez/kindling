@@ -23,3 +23,27 @@
     bottom: 0;
   }
 }
+
+
+/*
+Type Settings
+============= 
+Note: Set a parameter to '' to leave it as the default
+Example: @include type-setting('', 16px, '', '', '');
+This only sets the font-size, and leaves the remaining
+settings as default
+*/
+@mixin type-setting(
+  // Mixin Default Parameters
+  $family: $sans,
+  $size: $base-font-size,
+  $weight: $base-font-weight,
+  $line-height: $base-line-height,
+  $letter-spacing: $base-letter-spacing) {
+  // Mixin Body
+  font-family: $family;
+  font-size: $size;
+  font-weight: $weight;
+  line-height: $line-height;
+  letter-spacing: $letter-spacing;
+}

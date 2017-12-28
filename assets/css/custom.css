@@ -1,5 +1,13 @@
 /* [[1]] _variables.scss */
 /* [[2]] _mixins.scss */
+/*
+Type Settings
+============= 
+Note: Set a parameter to '' to leave it as the default
+Example: @include type-setting('', 16px, '', '', '');
+This only sets the font-size, and leaves the remaining
+settings as default
+*/
 /* [[4]] _print.scss */
 /* [[5]] _base.scss */
 /*
@@ -102,6 +110,27 @@ br + br {
 .gray-darkest {
   color: #4d4d4d; }
 
+.green-lightest {
+  color: #e7f2e2; }
+
+.green-lighter {
+  color: #d8ebd0; }
+
+.green-light {
+  color: #c9e3bf; }
+
+.green {
+  color: #badbad; }
+
+.green-dark {
+  color: #8dc478; }
+
+.green-darker {
+  color: #6fb454; }
+
+.green-darkest {
+  color: #395f2a; }
+
 .bg-gray-lightest {
   background-color: #f2f2f2; }
 
@@ -123,8 +152,153 @@ br + br {
 .bg-gray-darkest {
   background-color: #4d4d4d; }
 
+.bg-green-lightest {
+  background-color: #e7f2e2; }
+
+.bg-green-lighter {
+  background-color: #d8ebd0; }
+
+.bg-green-light {
+  background-color: #c9e3bf; }
+
+.bg-green {
+  background-color: #badbad; }
+
+.bg-green-dark {
+  background-color: #8dc478; }
+
+.bg-green-darker {
+  background-color: #6fb454; }
+
+.bg-green-darkest {
+  background-color: #395f2a; }
+
+.ts-h1 {
+  font-family: "Sans Font Name", Helvetica, Arial, sans-serif;
+  font-size: 72px;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: 0.05em; }
+
+.ts-h2 {
+  font-family: "Sans Font Name", Helvetica, Arial, sans-serif;
+  font-size: 66px;
+  font-weight: 100;
+  line-height: 1.2;
+  letter-spacing: 0.05em; }
+
+.ts-h3 {
+  font-family: "Serif Font Name", Georgia, Times New Roman, Times, serif;
+  font-size: 60px;
+  font-weight: 300;
+  line-height: 1.2;
+  letter-spacing: 0.05em; }
+
+.ts-h4 {
+  font-family: "Serif Font Name", Georgia, Times New Roman, Times, serif;
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: 0.05em;
+  color: #6fb454; }
+
+.ts-h5 {
+  font-family: "Serif Font Name", Georgia, Times New Roman, Times, serif;
+  font-size: 48px;
+  font-weight: 300;
+  line-height: 1.2;
+  letter-spacing: 0.05em; }
+
+.ts-h6 {
+  font-family: "Serif Font Name", Georgia, Times New Roman, Times, serif;
+  font-size: 32px;
+  font-weight: 300;
+  line-height: 1.2;
+  letter-spacing: 0.05em; }
+
+.ts-h6 {
+  font-family: "Serif Font Name", Georgia, Times New Roman, Times, serif;
+  font-size: 32px;
+  font-weight: 300;
+  line-height: 1.2;
+  letter-spacing: 0.05em; }
+
+.ts-h7 {
+  font-family: "Sans Font Name", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: 0.07em; }
+
+.ts-t1 {
+  font-family: "Sans Font Name", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.2;
+  letter-spacing: 0.05em; }
+
+.ts-t2 {
+  font-family: "Serif Font Name", Georgia, Times New Roman, Times, serif;
+  font-size: 16px;
+  font-weight: 100;
+  line-height: 1.2;
+  letter-spacing: 0.05em; }
+
+.ts-l1 {
+  font-family: "Sans Font Name", Helvetica, Arial, sans-serif;
+  font-size: 10px;
+  font-weight: 200;
+  line-height: 1.2;
+  letter-spacing: 0.09em;
+  text-transform: uppercase; }
+
+.ts-l2 {
+  font-family: "Sans Font Name", Helvetica, Arial, sans-serif;
+  font-size: 10px;
+  font-weight: 900;
+  line-height: 1.2;
+  letter-spacing: 0.09em;
+  text-transform: uppercase; }
+
 .isaac-grid {
   display: grid; }
+
+.l-SiteWrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 100px 1fr 200px;
+  grid-template-areas: "header" "main" "footer";
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  width: 100%;
+  height: 100%;
+  background-color: #f2f2f2; }
+
+.l-headerArea {
+  background-color: #cccccc;
+  grid-area: header; }
+
+.l-mainArea {
+  background-color: #cccccc;
+  grid-area: main; }
+
+.l-footerArea {
+  background-color: #cccccc;
+  grid-area: footer; }
+
+.l-sidebarArea {
+  background-color: #cccccc;
+  grid-area: sidebar; }
+
+.l-Sidebar {
+  display: grid;
+  grid-template-columns: 1fr 200px;
+  grid-template-rows: 100px 1fr 200px;
+  grid-template-areas: "header header" "main sidebar" "footer footer"; }
+  @media (max-width: 640px) {
+    .l-Sidebar {
+      grid-template-columns: 1fr;
+      grid-template-areas: "header" "main" "sidebar" "footer"; } }
 
 .Button {
   display: flex;
@@ -152,7 +326,7 @@ br + br {
   display: flex;
   flex-direction: column;
   width: 100%;
-  max-width: 400px;
+  max-width: 350px;
   border: 1px solid #E2E8ED;
   border-radius: 2px;
   transition: box-shadow var(--duration) var(--easing); }
