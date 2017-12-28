@@ -1,0 +1,40 @@
+.Icon {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  line-height: inherit;
+  background-color: $gray-darkest;
+}
+
+.Icon--right {
+  margin-left: $spacing-sm;
+}
+
+.Icon--left {
+  margin-right: $spacing-sm;
+}
+
+.Icon--xs {
+  width: 10px;
+  height: 10px;
+}
+
+.Icon--sm {
+  width: 12px;
+  height: 12px;
+}
+
+.Icon--md {
+  width: 16px;
+  height: 16px;
+}
+
+.Icon--lg {
+  width: 24px;
+  height: 24px;
+}
+
+.Icon--xl {
+  width: 32px;
+  height: 32px;
+}

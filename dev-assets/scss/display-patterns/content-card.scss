@@ -1,0 +1,62 @@
+:root {
+  --duration: 700ms;
+  --easing: cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+// transition: transform var(--duration) var(--easing);
+
+.ContentCard {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 400px;
+  border: 1px solid #E2E8ED;
+  border-radius: 2px;
+  transition: box-shadow var(--duration) var(--easing);
+
+  &:hover {
+    box-shadow: 0 0px 5px rgba(0, 0, 0, 0.1);
+  }
+}
+
+.ContentCard-featureImage {
+  @include aspect-ratio(16,9);
+  background-color: #efe;
+  overflow: hidden;
+}
+
+.ContentCard-featureImage img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 100%;
+}
+
+.ContentCard-content {
+  padding: 20px;
+}
+
+
+// ==========
+// VARIATIONS
+// ==========
+
+
+// Double Wide Content Card
+.ContentCard--doubleWide {
+  display: flex;
+  flex-direction: row;
+  max-width: 800px;
+
+  .ContentCard-featureImage {
+    width: 50%;
+    // @include aspect-ratio()
+  }
+
+  .ContentCard-content {
+    width: 50%;
+  }
+}
+
+

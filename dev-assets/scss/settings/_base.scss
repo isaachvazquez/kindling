@@ -14,8 +14,8 @@ Notes:
   box-sizing: border-box;
 }
 
-::-moz-selection{ background: #00BAA7; color: #ffffff; text-shadow: none; }
-::selection { background: #00BAA7; color: #ffffff; text-shadow: none; }
+::-moz-selection{ background: $primary-color; color: #ffffff; text-shadow: none; }
+::selection { background: $primary-color; color: #ffffff; text-shadow: none; }
 
 html,
 body {
@@ -26,7 +26,11 @@ body {
 body {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  font-family: $base-font;
+  font-size: $base-font-size;
+  font-weight: $base-font-weight;
+  line-height: $base-line-height;
+  letter-spacing: $base-letter-spacing;
 }
 
 

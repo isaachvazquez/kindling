@@ -2,16 +2,24 @@
 
 // Mixins
 
-// Transforms - Usage: @include transform(translate(50%, 50%) rotate(90deg));
-@mixin transform($args...) {
-    -webkit-transform: $args;
-       -moz-transform: $args;
-        -ms-transform: $args;
-            transform: $args;
-}
 
-@mixin breakpoint($breakpoint) {
-  @media (max-width: $breakpoint) {
-    @content;
+// [1] Aspect Ratio
+// Usage: @include aspect-ratio(16,9);
+// Note: If you want content within that element
+// wrap it in a .content div
+@mixin aspect-ratio($width, $height) {
+  position: relative;
+  &::before {
+    display: block;
+    content: "";
+    width: 100%;
+    padding-top: ($height / $width) * 100%;
+  }
+  > .aspect-ratio-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
   }
 }

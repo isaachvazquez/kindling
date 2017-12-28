@@ -12,22 +12,60 @@ $serif-fallback: 'Georgia, Times New Roman, Times, serif';
 $sans: 'Sans Font Name', #{$sans-fallback};
 $serif: 'Serif Font Name', #{$serif-fallback};
 
-
-// Text Size Settings
+// Font Sizes
 // ====
-$fontsize-1: 8;
-$fontsize-2: 12;
-$fontsize-3: 16;
-$fontsize-4: 24;
-$fontsize-5: 32;
-$fontsize-6: 48;
-$fontsize-7: 56;
+$f1: 8px;
+$f2: 12px;
+$f3: 16px;
+$f4: 24px;
+$f5: 32px;
+$f6: 48px;
+$f7: 56px;
+$f8: 60px;
+$f9: 66px;
+$f10: 72px;
+
+// Font Weights
+// ====
+$fw1: 100;
+$fw2: 200;
+$fw3: 300;
+$fw4: 400;
+$fw5: 500;
+$fw6: 600;
+$fw7: 700;
+$fw8: 800;
+$fw9: 900;
+
+// Spacing
+// ====
+$spacing-xs: 0.25em;
+$spacing-sm: 0.5em;
+$spacing-md: 1em;
+$spacing-lg: 1.5em;
+$spacing-xl: 2em;
+
+// Base Type Settings
+// ====
+$base-font: $sans;
+$base-font-size: $f3;
+$base-font-weight: $fw4;
+$base-line-height: 1.2;
+$base-letter-spacing: normal;
 
 
 // Color Settings
 // ====
 $primary-color: #badbad;
 $secondary-color: #baaaad;
+
+$gray-lightest: lighten(#cccccc, 15%);
+$gray-lighter: lighten(#cccccc, 10%);
+$gray-light: lighten(#cccccc, 5%);
+$gray: #cccccc;
+$gray-dark: darken(#cccccc, 15%);
+$gray-darker: darken(#cccccc, 25%);
+$gray-darkest: darken(#cccccc, 50%);
 
 
 // Grid Settings
@@ -47,8 +85,20 @@ $breakpoint-l: 1200px;
 $breakpoint-xl: 1400px;
 
 
+
+
+
 // Module Settings
 // ====
+
+
+
+// CSS Transition/Animation Variables
+$duration: 700ms;
+$easing: cubic-bezier(0.19, 1, 0.22, 1);
+
+
+
 
 
 

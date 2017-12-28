@@ -1,27 +1,8 @@
-/* ==================================
+/* ===================
 
 [ PROJECT STYLEGUIDE ]
 
-
-Table of Contents
-[1] Fonts
-[2] Icons
-[3] 
-[4]
-[5]
-[6]
-[7]
-[8]
-[9]
-[10]
-[11]
-[12]
-[13]
-[14]
-[15]
-[16]
-
-==================================== */
+====================== */
 :root {
   --primary-text-color: #111111;
   --highlight-color: #eaffef;
@@ -116,10 +97,11 @@ Table of Contents
     padding: 20px;
     max-width: 1200px; }
   .styleguide [class*="styleguide-"] {
-    font-family: Avenir, sans-serif;
-    color: var(--primary-text-color); }
+    font-family: Avenir, sans-serif; }
   .styleguide .styleguide-group {
     padding-bottom: 50px; }
+  .styleguide .styleguide-subgroup {
+    padding-bottom: 30px; }
   .styleguide .styleguide-title {
     font-weight: 500;
     letter-spacing: 0.03em;
@@ -146,26 +128,42 @@ Table of Contents
     display: inline-block;
     margin-top: 5px;
     padding: 7px;
-    max-width: 400px;
+    max-width: 500px;
     font-size: 14px;
     line-height: 1.2;
     color: #5cc4ef;
     background-color: #f5f5f5;
     border-radius: 2px; }
+  .styleguide .styleguide-code-preview {
+    position: relative;
+    padding-left: 75px; }
+    .styleguide .styleguide-code-preview::before {
+      content: 'Usage';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 75px;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #f5f5f5; }
   .styleguide .styleguide-code-preview pre {
+    display: flex;
     white-space: normal; }
   .styleguide .styleguide-code-preview code {
     display: inline-block;
-    max-width: 600px;
     font-size: 13px;
-    white-space: pre;
+    white-space: pre-wrap;
     background-color: #fbfdfd;
     border: 1px solid var(--border-color);
     border-radius: 2px; }
 
+.styleguide-color-item {
+  padding: 2px; }
+  .styleguide-color-item code {
+    margin-left: 10px; }
+
 [class*="col-"] {
   background-color: #efefef;
-  margin: 0 !important; }
-
-.row * + * {
-  margin-left: 10px !important; }
+  text-align: center; }

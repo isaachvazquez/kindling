@@ -1,12 +1,8 @@
-.row {
-  display: flex;
-  flex-wrap: wrap;
+.row,
+.nested-row {
   position: relative;
-  width: 100%; }
-  .row::after {
-    content: '';
-    display: table;
-    clear: both; }
+  display: flex;
+  flex-wrap: wrap; }
 
 .flex-errbody [class*="col-"],
 .flex-children {
@@ -18,13 +14,9 @@
 
 [class*="col-"] {
   position: relative;
-  margin: 10px 10px 10px;
+  margin: 0 10px 20px;
   min-height: 20px;
   float: left; }
-  [class*="col-"]::after {
-    content: '';
-    display: table;
-    clear: both; }
 
 .col-100 {
   width: calc(100% - (10px * 2)); }
@@ -50,6 +42,9 @@
 .col-33 {
   width: calc(33.33333% - (10px * 2)); }
 
+.col-30 {
+  width: calc(30% - (10px * 2)); }
+
 .col-25 {
   width: calc(25% - (10px * 2)); }
 
@@ -74,6 +69,8 @@
     width: 40%; }
   .no-gutter.col-33 {
     width: 33.33333%; }
+  .no-gutter.col-30 {
+    width: 30%; }
   .no-gutter.col-25 {
     width: 25%; }
   .no-gutter.col-20 {

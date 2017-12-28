@@ -1,27 +1,8 @@
-/* ==================================
+/* ===================
 
 [ PROJECT STYLEGUIDE ]
 
-
-Table of Contents
-[1] Fonts
-[2] Icons
-[3] 
-[4]
-[5]
-[6]
-[7]
-[8]
-[9]
-[10]
-[11]
-[12]
-[13]
-[14]
-[15]
-[16]
-
-==================================== */
+====================== */
 
 // Styleguide Variables
 :root {
@@ -153,7 +134,7 @@ Table of Contents
 
   [class*="styleguide-"] {
     font-family: Avenir, sans-serif;
-    color: var(--primary-text-color);
+    // color: var(--primary-text-color);
   }
 
 
@@ -161,6 +142,10 @@ Table of Contents
   ---------------------------------------------*/
   .styleguide-group {
     padding-bottom: 50px;
+  }
+
+  .styleguide-subgroup {
+    padding-bottom: 30px;
   }
 
   .styleguide-title {
@@ -197,7 +182,7 @@ Table of Contents
     display: inline-block;
     margin-top: 5px;
     padding: 7px;
-    max-width: 400px;
+    max-width: 500px;
     font-size: 14px;
     line-height: 1.2;
     color: #5cc4ef;
@@ -205,19 +190,35 @@ Table of Contents
     border-radius: 2px;
   }
 
-  .styleguide-code-preview {
 
+
+  .styleguide-code-preview {
+    position: relative;
+    padding-left: 75px;
+    &::before {
+      content: 'Usage';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 75px;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #f5f5f5;
+    }
   }
 
   .styleguide-code-preview pre {
+    display: flex;
     white-space: normal;
   }
 
   .styleguide-code-preview code {
     display: inline-block;
-    max-width: 600px;
     font-size: 13px;
-    white-space: pre;
+    // white-space: pre;
+    white-space: pre-wrap; // For now use pre-wrap until you can figure out the freaking overflow problem
     background-color: #fbfdfd;
     // background-image: linear-gradient(transparent 13px, rgba(69, 142, 209, 0.04) 50%, transparent 100%);
     border: 1px solid var(--border-color);
@@ -227,6 +228,15 @@ Table of Contents
 
 
 
+.styleguide-color-item {
+  padding: 2px;
+
+  code {
+    margin-left: 10px;
+  }
+}
+
+
 
 
 
@@ -234,11 +244,12 @@ Table of Contents
 
 
 // Peachy Overrides
+// .row {
+//   margin-left: -10px;
+//   margin-right: -10px;
+// }
+
 [class*="col-"] {
   background-color: #efefef;
-  margin: 0 !important;
-}
-
-.row * + * {
-  margin-left: 10px !important;
+  text-align: center;
 }

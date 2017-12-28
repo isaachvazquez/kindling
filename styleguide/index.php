@@ -85,51 +85,56 @@
   <script src="../assets/js/custom.js"></script>
   <script>
 
-    var entityMap = {
-      '&': '&amp;',
-      '<': '&lt;',
-      '>': '&gt;',
-      '"': '&quot;',
-      "'": '&#39;',
-      '/': '&#x2F;',
-      '`': '&#x60;',
-      '=': '&#x3D;'
-    };
+    function setupCodePreview() {
 
-    function escapeHtml (string) {
-      return String(string).replace(/[&<>"'`=\/]/g, function (s) {
-        return entityMap[s];
+      var entityMap = {
+        '&': '&amp;',
+        '<': '&lt;',
+        '>': '&gt;',
+        '"': '&quot;',
+        "'": '&#39;',
+        '/': '&#x2F;',
+        '`': '&#x60;',
+        '=': '&#x3D;'
+      };
+
+      function escapeHtml (string) {
+        return String(string).replace(/[&<>"'`=\/]/g, function (s) {
+          return entityMap[s];
+        });
+      }
+
+      var components = document.querySelectorAll('.styleguide-component');
+      var codeBlocks = document.querySelectorAll('.styleguide-code-preview code');
+
+
+      // Create an array for each component's code
+      componentCode = [];
+
+      components.forEach(function(component) {
+        var htmlString = escapeHtml(component.innerHTML);
+
+        htmlString = htmlString.trim();
+        htmlString = htmlString.replace(/\s+\n\s*/,"\n");
+
+        componentCode.push(htmlString);
       });
+
+      // If the number of components matches the number of code blocks available
+      // populate the code blocks
+      if(componentCode.length === codeBlocks.length) {
+        codeBlocks.forEach(function(block, index) {
+          var code = componentCode[index];
+
+          block.innerHTML = code;
+          hljs.highlightBlock(block);
+        });
+      } else {
+        console.log('Missing Code blocks or components');
+      }
     }
 
-    var components = document.querySelectorAll('.styleguide-component');
-    var codeBlocks = document.querySelectorAll('.styleguide-code-preview pre code');
-
-
-    // Create an array for each component's code
-    componentCode = [];
-
-    components.forEach(function(component) {
-      var htmlString = escapeHtml(component.innerHTML);
-
-      htmlString = htmlString.trim();
-      htmlString = htmlString.replace(/\s+\n\s*/,"\n");
-
-      componentCode.push(htmlString);
-    });
-
-    // If the number of components matches the number of code blocks available
-    // populate the code blocks
-    if(componentCode.length === codeBlocks.length) {
-      codeBlocks.forEach(function(block, index) {
-        var code = componentCode[index];
-
-        block.innerHTML = code;
-        hljs.highlightBlock(block);
-      });
-    } else {
-      console.log('Missing Code blocks or components');
-    }
+    setupCodePreview();
 
 
   </script>
