@@ -98,6 +98,7 @@
     letter-spacing: 0.03em;
     text-align: center; }
   .styleguide .styleguide-heading {
+    margin-top: 0;
     font-size: 36px;
     font-weight: 100;
     letter-spacing: 0.03em;

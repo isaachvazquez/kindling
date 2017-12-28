@@ -10,8 +10,10 @@
   flex-direction: column;
   width: 100%;
   max-width: 350px;
+  height: 450px;
   border: 1px solid #E2E8ED;
   border-radius: 2px;
+  text-decoration: none;
   transition: box-shadow var(--duration) var(--easing);
 
   &:hover {
@@ -35,6 +37,11 @@
 
 .ContentCard-content {
   padding: 20px;
+}
+
+.ContentCard-footer {
+  display: flex;
+  align-items: center;
 }
 
 

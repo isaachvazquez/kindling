@@ -124,8 +124,16 @@
           </div>
 
           <div class="ContentCard-content">
+            <h3>Heading for Card Content</h3>
             <p>Text of card content</p>
             <button class="Button">Primary Button</button>
+
+            <div class="ContentCard-footer pt-2">
+              <div class="ProfileImage ProfileImage--sm">
+                <img src="https://dg.imgix.net/john-piper-t1zc1vhs-en/square/john-piper-t1zc1vhs.jpg" alt="">
+              </div>
+              <span class="ts-l1 ml-1">John Piper</span>
+            </div>
           </div>
         </div>
 
@@ -156,7 +164,15 @@
             <p class="gray-darker">Text of card content</p>
             <p class="gray-darkest">Text of card content</p>
             <button class="Button">Primary Button</button>
+
+            <div class="ContentCard-footer pt-2">
+              <div class="ProfileImage ProfileImage--sm">
+                <img src="https://dg.imgix.net/john-piper-t1zc1vhs-en/square/john-piper-t1zc1vhs.jpg" alt="">
+              </div>
+              <span class="ts-l1 ml-1">John Piper</span>
+            </div>
           </div>
+
         </div>
 
       </div>

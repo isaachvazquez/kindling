@@ -9,7 +9,24 @@
       <div class="styleguide-component">
         <div class="l-SiteWrapper">
           <header class="l-headerArea">Header</header>
-          <main class="l-mainArea">Main</main>
+          <main class="l-mainArea">
+            Main
+            <div class="row">
+              <div class="col-100">100</div>
+              <div class="col-25">25</div>
+              <div class="col-25">25</div>
+              <div class="col-50">50</div>
+
+              <div class="col-50">50</div>
+              <div class="col-25">25</div>
+              <div class="col-25">25</div>
+
+              <div class="col-25">25</div>
+              <div class="col-25">25</div>
+              <div class="col-25">25</div>
+              <div class="col-25">25</div>
+            </div>
+          </main>
           <footer class="l-footerArea">Footer</footer>
         </div>
       </div>

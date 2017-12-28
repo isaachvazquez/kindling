@@ -63,6 +63,7 @@
       <span class="ts-h5">Type Setting H5</span><br />
       <span class="ts-h6">Type Setting H6</span><br />
       <span class="ts-h7">Type Setting H7</span><br />
+      <span class="ts-h8">Type Setting H8</span><br />
 
       <h4 class="styleguide-label styleguide-label--space">Text &amp; Such</h4>
       <span class="ts-t1">Type Setting T1</span><br />
