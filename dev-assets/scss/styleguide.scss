@@ -6,8 +6,9 @@
 
 // Styleguide Variables
 :root {
+  --primary-color: #706cff;
   --primary-text-color: #111111;
-  --highlight-color: #eaffef;
+  --highlight-color: #dddcff;
   --border-color: #efefef;
   --divider-color: #dee2e6;
   --link-static-color: var(--primary-text-color);
@@ -21,7 +22,7 @@
   max-width: 1200px;
 
   display: grid;
-  grid-template-columns: 200px repeat(11, 1fr);
+  grid-template-columns: 300px repeat(11, 1fr);
   grid-template-rows: 100px 1fr 200px;
   grid-template-areas: 
     "styleguide-header styleguide-header styleguide-header styleguide-header styleguide-header styleguide-header styleguide-header styleguide-header styleguide-header styleguide-header styleguide-header styleguide-header"
@@ -44,10 +45,10 @@
       "styleguide-footer";
   }
 
-  header.styleguide-header { grid-area: styleguide-header }
-  main.styleguide-main { grid-area: styleguide-main }
-  main.styleguide-nav { grid-area: styleguide-nav }
-  footer.styleguide-footer { grid-area: styleguide-footer }
+  header.styleguide-header { grid-area: styleguide-header; }
+  main.styleguide-main { grid-area: styleguide-main; }
+  nav.styleguide-nav { grid-area: styleguide-nav; }
+  footer.styleguide-footer { grid-area: styleguide-footer; }
 
 
   /* Styleguide Header
@@ -62,6 +63,10 @@
   /* Styleguide Navigation
   ---------------------------------------------*/
   nav.styleguide-nav {
+    padding-left: 15px;
+  }
+
+  .styleguide-sidebar-navigation {
     background-color: #ffffff;
     align-self: start;
     border: 1px solid var(--border-color);
@@ -69,6 +74,7 @@
     position: sticky;
     top: 15px;
   }
+
 
   nav.styleguide-nav ul {
     margin: 0;
@@ -89,6 +95,11 @@
     text-decoration: none;
     background-color: #ffffff;
     color: var(--link-static-color);
+
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-weight: 700;
+    color: var(--primary-color);
 
     // &::before {
     //   content: '>';
@@ -119,6 +130,7 @@
   ---------------------------------------------*/
   main.styleguide-main {
     background-color: #ffffff;
+    border: 1px solid var(--border-color);
   }
 
   /* Styleguide Footer
@@ -149,9 +161,14 @@
   }
 
   .styleguide-title {
-    font-weight: 500;
-    letter-spacing: 0.03em;
+    font-weight: 900;
+    letter-spacing: 0.07em;
     text-align: center;
+    text-transform: uppercase;
+
+    color: var(--primary-color);
+    padding: 5px 10px 3px;
+    text-shadow: 2px 2px 2px rgba(200, 200, 200, 1);
   }
 
   .styleguide-heading {
@@ -160,6 +177,7 @@
     font-weight: 100;
     letter-spacing: 0.03em;
     border-bottom: 2px solid var(--border-color);
+    color: var(--primary-color);
   }
 
   .styleguide-subheading {
@@ -169,6 +187,9 @@
     letter-spacing: 0.09em;
     text-transform: uppercase;
     background-color: var(--highlight-color);
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 3px 7px 2px;
   }
 
   .styleguide-label {
@@ -179,7 +200,7 @@
     font-weight: 900;
     letter-spacing: 0.09em;
     text-transform: uppercase;
-    color: #706cff;
+    color: var(--primary-color);
   }
 
   .styleguide-label--space {
@@ -196,9 +217,9 @@
     max-width: 500px;
     font-size: 14px;
     line-height: 1.2;
-    color: #706cff;
+    color: var(--primary-color);
     background-color: #f5f5f5;
-    border: 1px solid #706cff;
+    border: 1px solid var(--primary-color);
     border-radius: 2px;
 
     &::before {
@@ -213,7 +234,6 @@
       justify-content: center;
       background-color: #f5f5f5;
       font-weight: bold;
-      // color: #8863ff;
       color: #ff6161;
       border: 1px solid #ff6161;
       border-top-left-radius: 2px;

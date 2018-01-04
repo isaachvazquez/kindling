@@ -49,29 +49,29 @@
     <div class="styleguide-help-text">
       <p>Type Setting Classes are based on the use case.</p>
       <h4>For Example:</h4>
-      <p>Headings = <code>.ts-h1</code></p>
-      <p>Text = <code>.ts-t1</code></p>
-      <p>Labels = <code>.ts-l1</code></p>
+      <p>Headings = <code>.ts-H1</code></p>
+      <p>Text = <code>.ts-T1</code></p>
+      <p>Labels = <code>.ts-L1</code></p>
     </div>
 
     <div class="styleguide-subgroup">
       <h4 class="styleguide-label styleguide-label--space">Headings &amp; Such</h4>
-      <span class="ts-h1">Type Setting H1</span><br />
-      <span class="ts-h2">Type Setting H2</span><br />
-      <span class="ts-h3">Type Setting H3</span><br />
-      <span class="ts-h4">Type Setting H4</span><br />
-      <span class="ts-h5">Type Setting H5</span><br />
-      <span class="ts-h6">Type Setting H6</span><br />
-      <span class="ts-h7">Type Setting H7</span><br />
-      <span class="ts-h8">Type Setting H8</span><br />
+      <span class="ts-H1">Type Setting H1</span><br />
+      <span class="ts-H2">Type Setting H2</span><br />
+      <span class="ts-H3">Type Setting H3</span><br />
+      <span class="ts-H4">Type Setting H4</span><br />
+      <span class="ts-H5">Type Setting H5</span><br />
+      <span class="ts-H6">Type Setting H6</span><br />
+      <span class="ts-H7">Type Setting H7</span><br />
+      <span class="ts-H8">Type Setting H8</span><br />
 
       <h4 class="styleguide-label styleguide-label--space">Text &amp; Such</h4>
-      <span class="ts-t1">Type Setting T1</span><br />
-      <span class="ts-t2">Type Setting T2</span><br />
+      <span class="ts-T1">Type Setting T1</span><br />
+      <span class="ts-T2">Type Setting T2</span><br />
 
       <h4 class="styleguide-label styleguide-label--space">Labels &amp; Such</h4>
-      <span class="ts-l1">Type Setting L1</span><br />
-      <span class="ts-l2">Type Setting L2</span>
+      <span class="ts-L1">Type Setting L1</span><br />
+      <span class="ts-L2">Type Setting L2</span>
     </div>
     
 

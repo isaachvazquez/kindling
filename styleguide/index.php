@@ -59,15 +59,18 @@
   </header>
   
   <nav class="styleguide-nav">
-    <ul>
-      <li><a href="#settings-design-elements">Settings/Design Elements</a></li>
-      <li><a href="#layouts">Layouts</a></li>
-      <li><a href="#display-patterns-components">Display Patterns/Components</a></li>
-      <li><a href="#javascript-interactions">Javascript Interactions</a></li>
-    </ul>
+    <div class="styleguide-sidebar-navigation">
+      <ul>
+        <li><a href="#settings-design-elements">Settings / Design Elements</a></li>
+        <li><a href="#layouts">Layouts</a></li>
+        <li><a href="#display-patterns-components">Display Patterns / Components</a></li>
+        <li><a href="#javascript-interactions">Javascript Interactions</a></li>
+      </ul>
+    </div>
   </nav>
 
   <main class="styleguide-main">
+
     <?php include "settings-design-elements.php" ?>
 
     <?php include "layout.php" ?>

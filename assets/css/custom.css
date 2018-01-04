@@ -167,28 +167,28 @@ br + br {
 .bg-green-darkest {
   background-color: #395f2a; }
 
-.ts-h1 {
+.ts-H1 {
   font-family: "Sans Font Name", Helvetica, Arial, sans-serif;
   font-size: 72px;
   font-weight: 700;
   line-height: 1.2;
   letter-spacing: 0.05em; }
 
-.ts-h2 {
+.ts-H2 {
   font-family: "Sans Font Name", Helvetica, Arial, sans-serif;
   font-size: 60px;
   font-weight: 100;
   line-height: 1.2;
   letter-spacing: 0.05em; }
 
-.ts-h3 {
+.ts-H3 {
   font-family: "Serif Font Name", Georgia, Times New Roman, Times, serif;
   font-size: 48px;
   font-weight: 300;
   line-height: 1.2;
   letter-spacing: 0.05em; }
 
-.ts-h4 {
+.ts-H4 {
   font-family: "Serif Font Name", Georgia, Times New Roman, Times, serif;
   font-size: 32px;
   font-weight: 700;
@@ -196,28 +196,28 @@ br + br {
   letter-spacing: 0.05em;
   color: #6fb454; }
 
-.ts-h5 {
+.ts-H5 {
   font-family: "Sans Font Name", Helvetica, Arial, sans-serif;
   font-size: 24px;
   font-weight: 300;
   line-height: 1.2;
   letter-spacing: 0.05em; }
 
-.ts-h6 {
+.ts-H6 {
   font-family: "Serif Font Name", Georgia, Times New Roman, Times, serif;
   font-size: 24px;
   font-weight: 300;
   line-height: 1.2;
   letter-spacing: 0.05em; }
 
-.ts-h7 {
+.ts-H7 {
   font-family: "Sans Font Name", Helvetica, Arial, sans-serif;
   font-size: 16px;
   font-weight: 700;
   line-height: 1.2;
   letter-spacing: 0.07em; }
 
-.ts-h8 {
+.ts-H8 {
   font-family: "Sans Font Name", Helvetica, Arial, sans-serif;
   font-size: 16px;
   font-weight: 700;
@@ -225,21 +225,21 @@ br + br {
   letter-spacing: 0.09em;
   text-transform: uppercase; }
 
-.ts-t1 {
+.ts-T1 {
   font-family: "Sans Font Name", Helvetica, Arial, sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 1.2;
   letter-spacing: 0.05em; }
 
-.ts-t2 {
+.ts-T2 {
   font-family: "Serif Font Name", Georgia, Times New Roman, Times, serif;
   font-size: 16px;
   font-weight: 100;
   line-height: 1.2;
   letter-spacing: 0.05em; }
 
-.ts-l1 {
+.ts-L1 {
   font-family: "Sans Font Name", Helvetica, Arial, sans-serif;
   font-size: 10px;
   font-weight: 200;
@@ -247,7 +247,7 @@ br + br {
   letter-spacing: 0.09em;
   text-transform: uppercase; }
 
-.ts-l2 {
+.ts-L2 {
   font-family: "Sans Font Name", Helvetica, Arial, sans-serif;
   font-size: 10px;
   font-weight: 900;
@@ -427,6 +427,7 @@ br + br {
 
 .ContentCard-featureImage {
   position: relative;
+  margin-bottom: 20px;
   background-color: #efe;
   overflow: hidden; }
   .ContentCard-featureImage::before {
@@ -449,19 +450,38 @@ br + br {
   min-width: 100%; }
 
 .ContentCard-content {
-  padding: 20px; }
+  flex: 1;
+  margin-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  overflow: hidden; }
 
 .ContentCard-footer {
   display: flex;
-  align-items: center; }
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 20px; }
 
 .ContentCard--doubleWide {
+  position: relative;
   display: flex;
-  flex-direction: row;
   max-width: 800px; }
   .ContentCard--doubleWide .ContentCard-featureImage {
-    width: 50%; }
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-bottom: 0;
+    width: 50%;
+    height: 100%; }
   .ContentCard--doubleWide .ContentCard-content {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%; }
+  .ContentCard--doubleWide .ContentCard-footer {
+    position: absolute;
+    bottom: 0;
+    right: 0;
     width: 50%; }
 
 .Icon {
@@ -496,6 +516,65 @@ br + br {
 .Icon--xl {
   width: 32px;
   height: 32px; }
+
+.Modal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: auto;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s 0.2s, opacity 0.2s; }
+
+.Modal--isActive {
+  visibility: visible;
+  opacity: 1;
+  transition-delay: 0s; }
+
+.Modal--background {
+  background-color: rgba(0, 0, 0, 0.2); }
+
+.Modal-dialog {
+  padding: 30px;
+  max-width: 600px;
+  max-height: 600px;
+  background-color: #ffffff;
+  box-shadow: 0 20px 75px rgba(0, 0, 0, 0.2);
+  overflow: scroll;
+  opacity: 0;
+  transform: translateY(15px);
+  transition: opacity 0.2s, transform 0.2s; }
+
+.Modal-dialog--isActive {
+  opacity: 1;
+  transform: translateY(0); }
+
+.Modal-closeButton {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  transition: background-color 0.2s; }
+
+.Modal-closeButton:hover {
+  background-color: #efe; }
+
+.Modal-closeButton svg {
+  width: 100%;
+  height: 100%;
+  pointer-events: none; }
 
 .ProfileImage {
   border-radius: 50%; }

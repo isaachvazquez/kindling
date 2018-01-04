@@ -52,34 +52,34 @@
 // ===
 
 // Headings & Such
-.ts-h1 { @include type-setting($sans, $f10, $fw7, 1.2, 0.05em); }
-.ts-h2 { @include type-setting($sans, $f8, $fw1, 1.2, 0.05em); }
-.ts-h3 { @include type-setting($serif, $f6, $fw3, 1.2, 0.05em); }
-.ts-h4 {
+.ts-H1 { @include type-setting($sans, $f10, $fw7, 1.2, 0.05em); }
+.ts-H2 { @include type-setting($sans, $f8, $fw1, 1.2, 0.05em); }
+.ts-H3 { @include type-setting($serif, $f6, $fw3, 1.2, 0.05em); }
+.ts-H4 {
   @include type-setting($serif, $f5, $fw7, 1.2, 0.05em);
   color: $green-darker;
 }
-.ts-h5 { @include type-setting($sans, $f4, $fw3, 1.2, 0.05em); }
-.ts-h6 { @include type-setting($serif, $f4, $fw3, 1.2, 0.05em); }
-.ts-h7 { @include type-setting($sans, $f3, $fw7, 1.2, 0.07em); }
-.ts-h8 {
+.ts-H5 { @include type-setting($sans, $f4, $fw3, 1.2, 0.05em); }
+.ts-H6 { @include type-setting($serif, $f4, $fw3, 1.2, 0.05em); }
+.ts-H7 { @include type-setting($sans, $f3, $fw7, 1.2, 0.07em); }
+.ts-H8 {
   @include type-setting($sans, $f3, $fw7, 1.2, 0.09em);
   text-transform: uppercase;
 }
 
 
 // Text & Such
-.ts-t1 { @include type-setting($sans, $f3, $fw4, 1.2, 0.05em); }
-.ts-t2 {
+.ts-T1 { @include type-setting($sans, $f3, $fw4, 1.2, 0.05em); }
+.ts-T2 {
   @include type-setting($serif, $f3, $fw1, 1.2, 0.05em);
 }
 
 // Labels & Such
-.ts-l1 {
+.ts-L1 {
   @include type-setting($sans, $f1, $fw2, 1.2, 0.09em);
   text-transform: uppercase;
 }
-.ts-l2 {
+.ts-L2 {
   @include type-setting($sans, $f1, $fw9, 1.2, 0.09em);
   text-transform: uppercase;
 }

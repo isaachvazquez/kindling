@@ -4,8 +4,9 @@
 
 ====================== */
 :root {
+  --primary-color: #706cff;
   --primary-text-color: #111111;
-  --highlight-color: #eaffef;
+  --highlight-color: #dddcff;
   --border-color: #efefef;
   --divider-color: #dee2e6;
   --link-static-color: var(--primary-text-color);
@@ -17,7 +18,7 @@
   margin: 0 auto;
   max-width: 1200px;
   display: grid;
-  grid-template-columns: 200px repeat(11, 1fr);
+  grid-template-columns: 300px repeat(11, 1fr);
   grid-template-rows: 100px 1fr 200px;
   grid-template-areas: "styleguide-header styleguide-header styleguide-header styleguide-header styleguide-header styleguide-header styleguide-header styleguide-header styleguide-header styleguide-header styleguide-header styleguide-header" "styleguide-nav styleguide-main styleguide-main styleguide-main styleguide-main styleguide-main styleguide-main styleguide-main styleguide-main styleguide-main styleguide-main styleguide-main" "styleguide-footer styleguide-footer styleguide-footer styleguide-footer styleguide-footer styleguide-footer styleguide-footer styleguide-footer styleguide-footer styleguide-footer styleguide-footer styleguide-footer";
   grid-column-gap: 15px;
@@ -42,7 +43,7 @@
     grid-area: styleguide-header; }
   .styleguide main.styleguide-main {
     grid-area: styleguide-main; }
-  .styleguide main.styleguide-nav {
+  .styleguide nav.styleguide-nav {
     grid-area: styleguide-nav; }
   .styleguide footer.styleguide-footer {
     grid-area: styleguide-footer; }
@@ -51,6 +52,8 @@
     justify-content: center;
     align-items: center; }
   .styleguide nav.styleguide-nav {
+    padding-left: 15px; }
+  .styleguide .styleguide-sidebar-navigation {
     background-color: #ffffff;
     align-self: start;
     border: 1px solid var(--border-color);
@@ -71,7 +74,11 @@
     text-align: left;
     text-decoration: none;
     background-color: #ffffff;
-    color: var(--link-static-color); }
+    color: var(--link-static-color);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-weight: 700;
+    color: var(--primary-color); }
     .styleguide nav.styleguide-nav a:hover {
       background-color: var(--link-hover-color); }
     .styleguide nav.styleguide-nav a:first-child {
@@ -81,7 +88,8 @@
       border-bottom-right-radius: var(--border-radius);
       border-bottom-left-radius: var(--border-radius); }
   .styleguide main.styleguide-main {
-    background-color: #ffffff; }
+    background-color: #ffffff;
+    border: 1px solid var(--border-color); }
   .styleguide footer.styleguide-footer {
     background-color: #2f2f2f; }
   .styleguide section {
@@ -94,22 +102,30 @@
   .styleguide .styleguide-subgroup {
     padding-bottom: 30px; }
   .styleguide .styleguide-title {
-    font-weight: 500;
-    letter-spacing: 0.03em;
-    text-align: center; }
+    font-weight: 900;
+    letter-spacing: 0.07em;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--primary-color);
+    padding: 5px 10px 3px;
+    text-shadow: 2px 2px 2px #c8c8c8; }
   .styleguide .styleguide-heading {
     margin-top: 0;
     font-size: 36px;
     font-weight: 100;
     letter-spacing: 0.03em;
-    border-bottom: 2px solid var(--border-color); }
+    border-bottom: 2px solid var(--border-color);
+    color: var(--primary-color); }
   .styleguide .styleguide-subheading {
     display: inline-block;
     font-size: 16px;
     font-weight: 500;
     letter-spacing: 0.09em;
     text-transform: uppercase;
-    background-color: var(--highlight-color); }
+    background-color: var(--highlight-color);
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 3px 7px 2px; }
   .styleguide .styleguide-label {
     display: block;
     margin: 0;
@@ -118,7 +134,7 @@
     font-weight: 900;
     letter-spacing: 0.09em;
     text-transform: uppercase;
-    color: #706cff; }
+    color: var(--primary-color); }
   .styleguide .styleguide-label--space {
     margin-top: 40px;
     margin-bottom: 10px; }
@@ -131,9 +147,9 @@
     max-width: 500px;
     font-size: 14px;
     line-height: 1.2;
-    color: #706cff;
+    color: var(--primary-color);
     background-color: #f5f5f5;
-    border: 1px solid #706cff;
+    border: 1px solid var(--primary-color);
     border-radius: 2px; }
     .styleguide .styleguide-help-text::before {
       content: 'NOTE:';

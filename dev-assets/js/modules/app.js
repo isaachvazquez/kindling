@@ -256,33 +256,3 @@ function getScrollPosition() {
 
   return y;
 }
-
-// // Module
-// var a = 0,
-//   b = 200;
-
-
-// if(a === b) {
-//   console.log('True dat.');
-// }
-
-// for(var i=0; i<b; i++) {
-//   console.log('Arrrgggggghhhhh I am a pirate, and I have a hook.');
-// }
-
-// var x = 212;
-// var z = 23;
-// var y = 2;
-
-// // Module 2
-// const square = (n) => {
-//   const result = n * n;
-//   return result;
-// }
-
-// const function2 = () => {
-//   return true;
-// }
-
-// // Export the functions in an object
-// module.exports = { square, function2 };

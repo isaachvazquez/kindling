@@ -1,16 +1,16 @@
-// Module
-var a = 0,
-  b = 200;
+// // Module
+// var a = 0,
+//   b = 200;
 
 
-if(a === b) {
-  console.log('True dat.');
-}
+// if(a === b) {
+//   console.log('True dat.');
+// }
 
-for(var i=0; i<b; i++) {
-  console.log('Arrrgggggghhhhh I am a pirate, and I have a hook.');
-}
+// for(var i=0; i<b; i++) {
+//   console.log('Arrrgggggghhhhh I am a pirate, and I have a hook.');
+// }
 
-var x = 212;
-var z = 23;
-var y = 2;
+// var x = 212;
+// var z = 23;
+// var y = 2;
