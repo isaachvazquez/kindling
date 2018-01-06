@@ -22,12 +22,12 @@ Team
 -----
 Developer: Isaac Vazquez
 Twitter: @isaachvazquez
-From: Minneapolis, MN
+From: Stevens Point, WI
 
 
 Technology
 ----------
-Editor: Atom - http://atom.io
+Editor: Sublime Text - https://www.sublimetext.com/
 Design Tool: Sketch - http://sketchapp.io
 
 
