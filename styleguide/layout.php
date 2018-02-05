@@ -11,19 +11,6 @@
           <header class="l-headerArea">Header</header>
           <main class="l-mainArea">
             Main
-            <!-- <div class="row">
-              <div class="col-100">100</div>
-              <div class="col-25">25</div>
-              <div class="col-25">25</div>
-              <div class="col-50">50</div>
-              <div class="col-50">50</div>
-              <div class="col-25">25</div>
-              <div class="col-25">25</div>
-              <div class="col-25">25</div>
-              <div class="col-25">25</div>
-              <div class="col-25">25</div>
-              <div class="col-25">25</div>
-            </div> -->
           </main>
           <footer class="l-footerArea">Footer</footer>
         </div>
@@ -57,26 +44,25 @@
     <h3 class="styleguide-subheading">Grid Options</h3>
     <h4 class="styleguide-label">1-5 Columns</h4>
     <div class="styleguide-component">
-      <div class="row">
-        <div class="col-100">100</div>
-        
-        <div class="col-100 bp-s-50">50</div>
-        <div class="col-100 bp-s-50">50</div>
 
-        <div class="col-100 bp-s-33">33</div>
-        <div class="col-100 bp-s-33">33</div>
-        <div class="col-100 bp-s-33">33</div>
+      <div class="grid grid--12 grid--gutter">
+        <div class="p-2 grid-span-12">12 columns</div>
 
-        <div class="col-100 bp-s-25">25</div>
-        <div class="col-100 bp-s-25">25</div>
-        <div class="col-100 bp-s-25">25</div>
-        <div class="col-100 bp-s-25">25</div>
+        <div class="p-2 grid-span-6">6 columns</div>
+        <div class="p-2 grid-span-6">6 columns</div>
 
-        <div class="col-100 bp-s-20">20</div>
-        <div class="col-100 bp-s-20">20</div>
-        <div class="col-100 bp-s-20">20</div>
-        <div class="col-100 bp-s-20">20</div>
-        <div class="col-100 bp-s-20">20</div>
+        <div class="p-2 grid-span-4">4 columns</div>
+        <div class="p-2 grid-span-4">4 columns</div>
+        <div class="p-2 grid-span-4">4 columns</div>
+
+        <div class="p-2 grid-span-3">3 columns</div>
+        <div class="p-2 grid-span-3">3 columns</div>
+        <div class="p-2 grid-span-3">3 columns</div>
+        <div class="p-2 grid-span-3">3 columns</div>
+
+        <div class="p-2 grid-span-2">2 columns</div>
+        <div class="p-2 grid-span-3">3 columns</div>
+        <div class="p-2 grid-span-7">7 columns</div>
       </div>
     </div>
     <div class="styleguide-code-preview">

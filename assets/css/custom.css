@@ -350,8 +350,46 @@ br + br {
   display: table;
   clear: both; }
 
-.isaac-grid {
+.grid {
   display: grid; }
+  .grid--gutter {
+    grid-gap: 10px; }
+  .grid--12 {
+    grid-template-columns: repeat(12, 1fr); }
+  .grid--6 {
+    grid-template-columns: repeat(6, 1fr); }
+  .grid--3 {
+    grid-template-columns: repeat(3, 1fr); }
+
+.grid-span {
+  grid-column: span 1; }
+  .grid-span-1 {
+    grid-column: span 1; }
+  .grid-span-2 {
+    grid-column: span 2; }
+  .grid-span-3 {
+    grid-column: span 3; }
+  .grid-span-4 {
+    grid-column: span 4; }
+  .grid-span-5 {
+    grid-column: span 5; }
+  .grid-span-6 {
+    grid-column: span 6; }
+  .grid-span-7 {
+    grid-column: span 7; }
+  .grid-span-8 {
+    grid-column: span 8; }
+  .grid-span-9 {
+    grid-column: span 9; }
+  .grid-span-10 {
+    grid-column: span 10; }
+  .grid-span-11 {
+    grid-column: span 11; }
+  .grid-span-12 {
+    grid-column: span 12; }
+
+.styleguide [class*="grid-span"] {
+  background-color: #efe; }
 
 .l-SiteWrapper {
   display: grid;

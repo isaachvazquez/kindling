@@ -1,3 +1,30 @@
-.isaac-grid {
+.grid {
   display: grid;
+
+  &--gutter { grid-gap: $grid-gutter; }
+  
+  &--12 { grid-template-columns: repeat(12, 1fr); }
+  &--6 { grid-template-columns: repeat(6, 1fr); }
+  &--3 { grid-template-columns: repeat(3, 1fr); }
+}
+
+.grid-span {
+  grid-column: span 1;
+
+  &-1 { grid-column: span 1; }
+  &-2 { grid-column: span 2; }
+  &-3 { grid-column: span 3; }
+  &-4 { grid-column: span 4; }
+  &-5 { grid-column: span 5; }
+  &-6 { grid-column: span 6; }
+  &-7 { grid-column: span 7; }
+  &-8 { grid-column: span 8; }
+  &-9 { grid-column: span 9; }
+  &-10 { grid-column: span 10; }
+  &-11 { grid-column: span 11; }
+  &-12 { grid-column: span 12; }
+}
+
+.styleguide [class*="grid-span"] {
+  background-color: #efe; // For styleguide only
 }
