@@ -111,6 +111,7 @@
     text-shadow: 2px 2px 2px #c8c8c8; }
   .styleguide .styleguide-heading {
     margin-top: 0;
+    margin-bottom: 20px;
     font-size: 36px;
     font-weight: 100;
     letter-spacing: 0.03em;
@@ -118,6 +119,7 @@
     color: var(--primary-color); }
   .styleguide .styleguide-subheading {
     display: inline-block;
+    margin-bottom: 10px;
     font-size: 16px;
     font-weight: 500;
     letter-spacing: 0.09em;
