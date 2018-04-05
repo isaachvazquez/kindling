@@ -1,0 +1,29 @@
+// Variables & Mixins
+@import "../settings/_variables";
+@import "../settings/_mixins";
+
+.Button {
+  display: flex;
+  align-items: center;
+
+  padding: 15px 20px;
+  background-color: tomato;
+  border: 1px solid tomato;
+
+  transition: background-color $duration $easing;
+  // transition: background-color 0.3s;
+}
+
+.Button:hover {
+  background-color: transparent;
+}
+
+
+.Button--secondary {
+  background-color: transparent;
+  border: 1px solid tomato;
+}
+
+.Button--secondary:hover {
+  background-color: tomato;
+}
