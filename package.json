@@ -1,8 +1,10 @@
 {
   "dependencies": {
+    "browser-sync": "^2.23.6",
     "gulp": "^3.9.1",
     "gulp-cli": "^1.4.0",
     "gulp-concat": "^2.6.1",
+    "gulp-connect-php": "^1.0.3",
     "gulp-cssnano": "^2.1.2",
     "gulp-sass": "^3.1.0",
     "gulp-tape": "^0.0.9",
@@ -11,6 +13,6 @@
     "tape": "^4.6.3"
   },
   "scripts": {
-    "kindling": "php -S localhost:2222"
+    "kindling": "gulp serve"
   }
 }

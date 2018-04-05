@@ -1,4 +1,3 @@
-
 // global variables
 var body = document.querySelector('body'),
     debug = document.querySelector('.js-debug') ? true: false,
