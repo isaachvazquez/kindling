@@ -137,7 +137,7 @@
           hljs.highlightBlock(block);
         });
       } else {
-        console.log('Missing Code blocks or components');
+        console.log('Warning: Missing Code blocks or components');
       }
     }
 
