@@ -1,6 +1,5 @@
-// =====================================================================
-// Gulp Tasks
-// =====================================================================
+// Gulp Plugins
+// ============
 var gulp = require('gulp'),
 		uglify = require('gulp-uglify'),
 		concat = require('gulp-concat'),
@@ -13,6 +12,7 @@ var gulp = require('gulp'),
 
 
 // Asset Paths
+// ===========
 var vendorSCSSPath = './dev-assets/scss/vendor/*.scss',
 		styleguideSCSSPath = './dev-assets/scss/styleguide.scss',
 		baseSCSSPath = './dev-assets/scss/app.scss',
@@ -25,6 +25,7 @@ var vendorSCSSPath = './dev-assets/scss/vendor/*.scss',
 
 
 // Default Gulp Task
+// =================
 gulp.task('default', function() {
 	console.log('Gulp, reporting in, ready for service!');
 });
