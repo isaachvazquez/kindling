@@ -24,7 +24,7 @@ window.onload = function(event) {
 // WINDOW SCROLL EVENT
 // ========================================
 window.onscroll = function(event) {
-  setScrollClasses(); 
+  setScrollClasses();
 }
 
 function setScrollClasses() {
@@ -155,7 +155,7 @@ Notes:
 ==================================== */
 /**
 * @method toggleMenu
-* Description: 
+* Description:
 *
 * @sideEffects - Add/Remove mobileMenuClass to/from body classList
 */
@@ -185,7 +185,7 @@ function escapeAll(e) {
 
 /**
 * @method toggleDropdown
-* Description: 
+* Description:
 *
 * @param {object} event - event object
 * @sideEffects - Add/Remove 'active' to/from Dropdown classList

@@ -2,6 +2,7 @@
 // ============
 var gulp = require('gulp'),
 		uglify = require('gulp-uglify'),
+		babel = require('gulp-babel'),
 		concat = require('gulp-concat'),
 		scss = require('gulp-sass'),
 		cssnano = require('gulp-cssnano'),
@@ -125,7 +126,12 @@ gulp.task("build-prod-css", function () {
 gulp.task('build-prod-js', function() {
 	return gulp.src(jsPath)
 		.pipe(concat('custom.js'))
-		.pipe(uglify())
+		.pipe(babel({
+        presets: ['env']
+    }))
+		.pipe(uglify().on('error', function(e) {
+			console.log(e);
+		}))
 		.pipe(gulp.dest(compiledJSPath));
 });
 
@@ -140,12 +146,3 @@ gulp.task('build-prod-js', function() {
 //   return gulp.src('tests/*.js')
 //     .pipe(tape({ reporter: tapColorize() }));
 // });
-
-
-
-
-
-
-
-
-
