@@ -1,5 +1,5 @@
 var test = require('tape');
-var module2 = require('../dev-assets/js/modules/module2');
+var module2 = require('../src/js/modules/module2');
 
 test('module2.square()', function(assertion) {
   var actual = module2.square(12),

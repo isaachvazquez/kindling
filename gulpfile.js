@@ -14,14 +14,14 @@ var gulp = require('gulp'),
 
 // Asset Paths
 // ===========
-var vendorSCSSPath = './dev-assets/scss/vendor/*.scss',
-		styleguideSCSSPath = './dev-assets/scss/styleguide.scss',
-		baseSCSSPath = './dev-assets/scss/app.scss',
-		scssWatchPath = ['./dev-assets/scss/**/*.scss', styleguideSCSSPath, vendorSCSSPath],
+var vendorSCSSPath = './src/scss/vendor/*.scss',
+		styleguideSCSSPath = './src/scss/styleguide.scss',
+		baseSCSSPath = './src/scss/app.scss',
+		scssWatchPath = ['./src/scss/**/*.scss', styleguideSCSSPath, vendorSCSSPath],
 		compiledCSSPath = './assets/css/',
 
-		jsPath = './dev-assets/js/modules/app.js',
-		jsWatchPath = './dev-assets/js/**/*.js',
+		jsPath = './src/js/modules/app.js',
+		jsWatchPath = './src/js/**/*.js',
 		compiledJSPath = './assets/js/';
 
 
