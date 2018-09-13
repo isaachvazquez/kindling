@@ -18,11 +18,11 @@ var vendorSCSSPath = './src/scss/vendor/*.scss',
 		styleguideSCSSPath = './src/scss/styleguide.scss',
 		baseSCSSPath = './src/scss/app.scss',
 		scssWatchPath = ['./src/scss/**/*.scss', styleguideSCSSPath, vendorSCSSPath],
-		compiledCSSPath = './assets/css/',
+		compiledCSSPath = './build/css/',
 
 		jsPath = './src/js/modules/app.js',
 		jsWatchPath = './src/js/**/*.js',
-		compiledJSPath = './assets/js/';
+		compiledJSPath = './build/js/';
 
 
 // Default Gulp Task

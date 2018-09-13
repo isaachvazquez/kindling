@@ -26,7 +26,7 @@
   <!-- Facebook sharing. http://developers.facebook.com/docs/opengraph/ -->
   <meta property="og:type" content="Page Name">
   <meta property="og:title" content="">
-  <meta property="og:image" content="./assets/images/icons/poop.png">
+  <meta property="og:image" content="./build/images/icons/poop.png">
   <meta property="og:site_name" content="Site Name">
   <meta property="og:url" content="http://domain.com">
   <meta property="og:description" content="">
@@ -37,19 +37,19 @@
   <meta name="twitter:creator" content="@twitter_handle">
   <meta name="twitter:title" content="Site Title">
   <meta name="twitter:description" content="Description">
-  <meta name="twitter:image:src" content="../assets/images/icons/poop.png">
+  <meta name="twitter:image:src" content="../build/images/icons/poop.png">
 
   <!-- Custom CSS -->
   <!-- You want to have your CSS as the very first asset that the HTML requests. - Harry Roberts -->
   <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css">
-  <link rel="stylesheet" type="text/css" href="../assets/css/vendor.css" />
-  <link rel="stylesheet" type="text/css" href="../assets/css/styleguide.css" />
-  <link rel="stylesheet" type="text/css" href="../assets/css/custom.css" />
+  <link rel="stylesheet" type="text/css" href="../build/css/vendor.css" />
+  <link rel="stylesheet" type="text/css" href="../build/css/styleguide.css" />
+  <link rel="stylesheet" type="text/css" href="../build/css/custom.css" />
 
   <!-- ICONS -->
-  <link rel="apple-touch-icon" href="./assets/images/icons/apple-touch-icon.png">
-  <link rel="shortcut icon" href="./assets/images/icons/poop.png" type="image/x-icon">
-  <link rel="icon" href="./assets/images/icons/poop.png" type="image/x-icon">
+  <link rel="apple-touch-icon" href="./build/images/icons/apple-touch-icon.png">
+  <link rel="shortcut icon" href="./build/images/icons/poop.png" type="image/x-icon">
+  <link rel="icon" href="./build/images/icons/poop.png" type="image/x-icon">
 </head>
 <body class="styleguide">
   <!-- Body -->
@@ -57,7 +57,7 @@
   <header class="styleguide-header">
     <h1 class="styleguide-title">Project Styleguide</h1>
   </header>
-  
+
   <nav class="styleguide-nav">
     <div class="styleguide-sidebar-navigation">
       <ul>
@@ -88,8 +88,8 @@
   <!-- External Javscript -->
   <!-- Highlight JS Reference: https://highlightjs.org/usage/ -->
   <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-  <!-- <script src="../assets/js/styleguide.js"></script> -->
-  <script src="../assets/js/custom.js"></script>
+  <!-- <script src="../build/js/styleguide.js"></script> -->
+  <script src="../build/js/custom.js"></script>
   <script>
 
     function setupCodePreview() {
