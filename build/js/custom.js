@@ -83,7 +83,9 @@ const KINDLING = {
     closeMenu: function() {
       body.classList.remove(mobileMenuClass);
     },
-
+    double: function(num) {
+      return num * 2;
+    },
   },
   // END METHODS ==============================================
 
@@ -130,14 +132,17 @@ const KINDLING = {
 };
 
 
-const APP = KINDLING.methods, // Make method calls less verbose
-      body = document.querySelector('body'),
-      debug = document.querySelector('.js-debug') ? true: false,
-      log = o => console.log(o); // Shortened Console Log Function
+// const APP = KINDLING.methods, // Make method calls less verbose
+//       body = document.querySelector('body'),
+//       debug = document.querySelector('.js-debug') ? true: false,
+//       log = o => console.log(o); // Shortened Console Log Function
+//
+//
+// const mobileMenuClass = 'MobileMenu--active';
+//
+// window.onload = function(event) {
+//   KINDLING.init();
+// }
 
 
-const mobileMenuClass = 'MobileMenu--active';
-
-window.onload = function(event) {
-  KINDLING.init();
-}
+module.exports = { KINDLING };

@@ -8,8 +8,8 @@ var gulp = require('gulp'),
 		cssnano = require('gulp-cssnano'),
 		browserSync = require('browser-sync').create(),
 		php = require('gulp-connect-php');
-		// tape = require('gulp-tape'),
-		// tapColorize = require('tap-colorize');
+		tape = require('gulp-tape'),
+		tapColorize = require('tap-colorize');
 
 
 // Asset Paths
@@ -136,13 +136,13 @@ gulp.task('build-prod-js', function() {
 });
 
 
-// // ========================================
-// // Unit Tests
-// // Tape Reference: https://github.com/substack/tape
-// // ========================================
-// // Run Unit Tests
-// gulp.task('test', function() {
-// 	console.log("Running Unit Tests...");
-//   return gulp.src('tests/*.js')
-//     .pipe(tape({ reporter: tapColorize() }));
-// });
+// ========================================
+// Unit Tests
+// Tape Reference: https://github.com/substack/tape
+// ========================================
+// Run Unit Tests
+gulp.task('test', function() {
+	console.log("Running Unit Tests...");
+  return gulp.src('tests/*.js')
+    .pipe(tape({ reporter: tapColorize() }));
+});
