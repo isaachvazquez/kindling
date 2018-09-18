@@ -22,12 +22,12 @@ Notes:
   box-sizing: border-box; }
 
 ::-moz-selection {
-  background: #badbad;
+  background: #706cff;
   color: #ffffff;
   text-shadow: none; }
 
 ::selection {
-  background: #badbad;
+  background: #706cff;
   color: #ffffff;
   text-shadow: none; }
 
@@ -105,25 +105,25 @@ br + br {
   color: #4d4d4d; }
 
 .green-lightest {
-  color: #e7f2e2; }
+  color: #a6ec8a; }
 
 .green-lighter {
-  color: #d8ebd0; }
+  color: #95e974; }
 
 .green-light {
-  color: #c9e3bf; }
+  color: #85e55e; }
 
 .green {
-  color: #badbad; }
+  color: #74e248; }
 
 .green-dark {
-  color: #8dc478; }
+  color: #4cbf1e; }
 
 .green-darker {
-  color: #6fb454; }
+  color: #3b9317; }
 
 .green-darkest {
-  color: #395f2a; }
+  color: #20510d; }
 
 .bg-gray-lightest {
   background-color: #f2f2f2; }
@@ -147,25 +147,25 @@ br + br {
   background-color: #4d4d4d; }
 
 .bg-green-lightest {
-  background-color: #e7f2e2; }
+  background-color: #a6ec8a; }
 
 .bg-green-lighter {
-  background-color: #d8ebd0; }
+  background-color: #95e974; }
 
 .bg-green-light {
-  background-color: #c9e3bf; }
+  background-color: #85e55e; }
 
 .bg-green {
-  background-color: #badbad; }
+  background-color: #74e248; }
 
 .bg-green-dark {
-  background-color: #8dc478; }
+  background-color: #4cbf1e; }
 
 .bg-green-darker {
-  background-color: #6fb454; }
+  background-color: #3b9317; }
 
 .bg-green-darkest {
-  background-color: #395f2a; }
+  background-color: #20510d; }
 
 .ts-H1 {
   font-family: "Sans Font Name", Helvetica, Arial, sans-serif;
@@ -194,7 +194,7 @@ br + br {
   font-weight: 700;
   line-height: 1.2;
   letter-spacing: 0.05em;
-  color: #6fb454; }
+  color: #3b9317; }
 
 .ts-H5 {
   font-family: "Sans Font Name", Helvetica, Arial, sans-serif;
@@ -515,8 +515,8 @@ br + br {
   display: flex;
   align-items: center;
   padding: 15px 20px;
-  background-color: #badbad;
-  border: 1px solid #badbad;
+  background-color: #706cff;
+  border: 1px solid #706cff;
   transition: background-color 700ms cubic-bezier(0.19, 1, 0.22, 1); }
 
 .Button:hover {
@@ -524,10 +524,10 @@ br + br {
 
 .Button--secondary {
   background-color: transparent;
-  border: 1px solid #badbad; }
+  border: 1px solid #706cff; }
 
 .Button--secondary:hover {
-  background-color: #badbad; }
+  background-color: #706cff; }
 
 :root {
   --duration: 700ms;

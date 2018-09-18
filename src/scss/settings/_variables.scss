@@ -56,7 +56,7 @@ $base-letter-spacing: normal;
 
 // Color Settings
 // ====
-$primary-color: #badbad;
+$primary-color: #706cff;
 $secondary-color: #baaaad;
 
 $gray: #cccccc;
@@ -67,13 +67,13 @@ $gray-dark: darken($gray, 15%);
 $gray-darker: darken($gray, 25%);
 $gray-darkest: darken($gray, 50%);
 
-$green: #badbad;
+$green: #74e248;
 $green-lightest: lighten($green, 15%);
 $green-lighter: lighten($green, 10%);
 $green-light: lighten($green, 5%);
 $green-dark: darken($green, 15%);
 $green-darker: darken($green, 25%);
-$green-darkest: darken($green, 50%);
+$green-darkest: darken($green, 40%);
 
 
 // Grid Settings
@@ -104,9 +104,3 @@ $breakpoint-xl: 1400px;
 // CSS Transition/Animation Variables
 $duration: 700ms;
 $easing: cubic-bezier(0.19, 1, 0.22, 1);
-
-
-
-
-
-

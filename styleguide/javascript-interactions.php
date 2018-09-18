@@ -3,6 +3,24 @@
   <h2 class="styleguide-heading">Javascript Interactions</h2>
 
   <div class="styleguide-help-text mb-2">
+    <p>Use <code>.js-exampleButton</code></p>
+  </div>
+
+  <div class="styleguide-subgroup">
+    <h4 class="styleguide-label">Example Button JS Hook</h4>
+    <div class="styleguide-component">
+      <button class="Button js-exampleButton mb-2" data-id="1">Button</button>
+      <button class="Button js-exampleButton" data-id="2">Button</button>
+    </div>
+    <div class="styleguide-code-preview">
+      <pre>
+        <code class="html"></code>
+      </pre>
+    </div>
+  </div>
+
+
+  <div class="styleguide-help-text mb-2">
     <p>Use <code>.js-closeModal</code> for the close modal js hook</p>
   </div>
 
@@ -61,7 +79,7 @@
             </pre>
           </div>
         </div>
-        
+
       </div>
 
       <button class="Modal-closeButton js-closeModal">

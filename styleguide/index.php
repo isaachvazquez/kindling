@@ -51,7 +51,7 @@
   <link rel="shortcut icon" href="./build/images/icons/poop.png" type="image/x-icon">
   <link rel="icon" href="./build/images/icons/poop.png" type="image/x-icon">
 </head>
-<body class="styleguide">
+<body class="styleguide js-debug">
   <!-- Body -->
 
   <header class="styleguide-header">
