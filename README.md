@@ -9,7 +9,7 @@ New Project setup.
 ## Usage
 
 ### Development Commands
-* `yarn run kindling` - Serves the site via Browsersync
+* `yarn kindling` - Serves the site via Browsersync
     * Local: `http://localhost:7777`
     * Device: `http://192.168.1.14:7777`
 * `yarn run gulp test` - Runs Unit Tests.
